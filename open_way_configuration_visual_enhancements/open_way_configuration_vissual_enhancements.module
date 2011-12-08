@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Open Way Configuration Visual Enhancements feature.
+ */
+
+include_once('open_way_configuration_vissual_enhancements.features.inc');

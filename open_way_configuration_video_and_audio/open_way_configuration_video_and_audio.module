@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Open Way Configuration Video and Audio feature.
+ */
+
+include_once('open_way_configuration_video_and_audio.features.inc');

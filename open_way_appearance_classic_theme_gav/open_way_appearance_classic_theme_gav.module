@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Classic Theme GAV feature.
+ */
+
+include_once('open_way_appearance_classic_theme_gav.features.inc');
