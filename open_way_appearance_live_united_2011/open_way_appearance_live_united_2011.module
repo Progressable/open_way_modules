@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Open Way - Appearance - Live United 2011 feature.
+ */
+
+include_once('open_way_appearance_live_united_2011.features.inc');

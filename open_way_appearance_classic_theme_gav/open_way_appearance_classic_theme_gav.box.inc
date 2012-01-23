@@ -64,7 +64,7 @@ function open_way_appearance_classic_theme_gav_default_box() {
   $box->description = 'Navigation Small GAV Give';
   $box->options = array(
     'body' => array(
-      'value' => '<div id="colourfulHeads"><div id="lg_give"><a href="/advocate"><img alt="GIVE" border="0" src="/sites/all/themes/live_united_classic/images/colourfulHead_give_lg.gif"></a></div><div class="mid" id="advocate"><a class="rollover" href="/advocate"><img alt="ADVOCATE" border="0" src="/sites/all/themes/live_united_classic/images/colourfulHead_advocate.gif"></a></div><div id="volunteer"><a class="rollover" href="/volunteer"><img alt="VOLUNTEER" border="0" src="/sites/all/themes/live_united_classic/images/colourfulHead_volunteer.gif"></a></div></div>',
+      'value' => '<div id="colourfulHeads"><div id="lg_give"><a href="/give"><img alt="GIVE" border="0" src="/sites/all/themes/live_united_classic/images/colourfulHead_give_lg.gif"></a></div><div class="mid" id="advocate"><a class="rollover" href="/advocate"><img alt="ADVOCATE" border="0" src="/sites/all/themes/live_united_classic/images/colourfulHead_advocate.gif"></a></div><div id="volunteer"><a class="rollover" href="/volunteer"><img alt="VOLUNTEER" border="0" src="/sites/all/themes/live_united_classic/images/colourfulHead_volunteer.gif"></a></div></div>',
       'format' => 'html_code',
     ),
   );
