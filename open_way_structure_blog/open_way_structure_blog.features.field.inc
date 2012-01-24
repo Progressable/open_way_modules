@@ -10,14 +10,14 @@
 function open_way_structure_blog_field_default_fields() {
   $fields = array();
 
-  // Exported field: 'node-blog-field_blog_image'
-  $fields['node-blog-field_blog_image'] = array(
+  // Exported field: 'node-blog-field_blog_ow_blog_image'
+  $fields['node-blog-field_blog_ow_blog_image'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_blog_image',
+      'field_name' => 'field_blog_ow_blog_image',
       'foreign keys' => array(
         'fid' => array(
           'columns' => array(
@@ -41,6 +41,7 @@ function open_way_structure_blog_field_default_fields() {
     ),
     'field_instance' => array(
       'bundle' => 'blog',
+      'default_value' => NULL,
       'deleted' => '0',
       'description' => 'This image will be displayed with your blog in both the preview and full displays.',
       'display' => array(
@@ -52,7 +53,7 @@ function open_way_structure_blog_field_default_fields() {
             'colorbox_gallery' => 'post',
             'colorbox_gallery_custom' => '',
             'colorbox_image_style' => 'large',
-            'colorbox_node_style' => 'rounded-rectangle-small',
+            'colorbox_node_style' => 'ow_small-rectangle-rounded',
           ),
           'type' => 'colorbox',
           'weight' => '0',
@@ -88,14 +89,14 @@ function open_way_structure_blog_field_default_fields() {
             'colorbox_gallery' => 'post',
             'colorbox_gallery_custom' => '',
             'colorbox_image_style' => 'large',
-            'colorbox_node_style' => 'rounded-rectangle-small',
+            'colorbox_node_style' => 'ow_small-rectangle-rounded',
           ),
           'type' => 'colorbox',
           'weight' => '0',
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_blog_image',
+      'field_name' => 'field_blog_ow_blog_image',
       'label' => 'Blog Image',
       'required' => 0,
       'settings' => array(
@@ -120,7 +121,7 @@ function open_way_structure_blog_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'image_image',
-        'weight' => '3',
+        'weight' => '1',
       ),
     ),
   );

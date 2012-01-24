@@ -19,7 +19,7 @@ function open_way_structure_story_ctools_plugin_api() {
  */
 function open_way_structure_story_node_info() {
   $items = array(
-    'post' => array(
+    'ow_story' => array(
       'name' => t('Story'),
       'base' => 'node_content',
       'description' => t('Use story for time-sensitive content like news, press releases or blog posts. They are the most general type of content. You can use them for almost anything. They are ideal for creating and displaying timely information about the organization. '),

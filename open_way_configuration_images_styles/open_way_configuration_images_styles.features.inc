@@ -20,56 +20,9 @@ function open_way_configuration_images_styles_ctools_plugin_api() {
 function open_way_configuration_images_styles_image_default_styles() {
   $styles = array();
 
-  // Exported image style: front-small-feature-box-square-corners
-  $styles['front-small-feature-box-square-corners'] = array(
-    'name' => 'front-small-feature-box-square-corners',
-    'effects' => array(
-      18 => array(
-        'label' => 'Scale and crop',
-        'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
-        'effect callback' => 'image_scale_and_crop_effect',
-        'dimensions callback' => 'image_resize_dimensions',
-        'form callback' => 'image_resize_form',
-        'summary theme' => 'image_resize_summary',
-        'module' => 'image',
-        'name' => 'image_scale_and_crop',
-        'data' => array(
-          'width' => '210',
-          'height' => '120',
-        ),
-        'weight' => '1',
-      ),
-    ),
-  );
-
-  // Exported image style: front_page_small_feature_box
-  $styles['front_page_small_feature_box'] = array(
-    'name' => 'front_page_small_feature_box',
-    'effects' => array(
-      16 => NULL,
-      17 => array(
-        'label' => 'Scale and crop',
-        'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
-        'effect callback' => 'image_scale_and_crop_effect',
-        'dimensions callback' => 'image_resize_dimensions',
-        'form callback' => 'image_resize_form',
-        'summary theme' => 'image_resize_summary',
-        'module' => 'image',
-        'name' => 'image_scale_and_crop',
-        'data' => array(
-          'width' => '233',
-          'height' => '131',
-        ),
-        'weight' => '2',
-      ),
-      18 => NULL,
-      19 => NULL,
-    ),
-  );
-
-  // Exported image style: rectangle-large
-  $styles['rectangle-large'] = array(
-    'name' => 'rectangle-large',
+  // Exported image style: ow_large-rectangle
+  $styles['ow_large-rectangle'] = array(
+    'name' => 'ow_large-rectangle',
     'effects' => array(
       17 => array(
         'label' => 'Scale and crop',
@@ -89,9 +42,33 @@ function open_way_configuration_images_styles_image_default_styles() {
     ),
   );
 
-  // Exported image style: larger
-  $styles['larger'] = array(
-    'name' => 'larger',
+  // Exported image style: ow_large-rectangle-rounded
+  $styles['ow_large-rectangle-rounded'] = array(
+    'name' => 'ow_large-rectangle-rounded',
+    'effects' => array(
+      11 => array(
+        'label' => 'Scale and crop',
+        'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
+        'effect callback' => 'image_scale_and_crop_effect',
+        'dimensions callback' => 'image_resize_dimensions',
+        'form callback' => 'image_resize_form',
+        'summary theme' => 'image_resize_summary',
+        'module' => 'image',
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => '225',
+          'height' => '225',
+        ),
+        'weight' => '1',
+      ),
+      12 => NULL,
+      13 => NULL,
+    ),
+  );
+
+  // Exported image style: ow_larger-rectangle
+  $styles['ow_larger-rectangle'] = array(
+    'name' => 'ow_larger-rectangle',
     'effects' => array(
       1 => array(
         'label' => 'Scale',
@@ -112,67 +89,9 @@ function open_way_configuration_images_styles_image_default_styles() {
     ),
   );
 
-  // Exported image style: rounded-rectangle-large
-  $styles['rounded-rectangle-large'] = array(
-    'name' => 'rounded-rectangle-large',
-    'effects' => array(
-      14 => array(
-        'label' => 'Scale and crop',
-        'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
-        'effect callback' => 'image_scale_and_crop_effect',
-        'dimensions callback' => 'image_resize_dimensions',
-        'form callback' => 'image_resize_form',
-        'summary theme' => 'image_resize_summary',
-        'module' => 'image',
-        'name' => 'image_scale_and_crop',
-        'data' => array(
-          'width' => '640',
-          'height' => '360',
-        ),
-        'weight' => '1',
-      ),
-      15 => array(
-        'label' => 'Change file format',
-        'help' => 'Choose to save the image as a different filetype.',
-        'effect callback' => 'coloractions_convert_image',
-        'form callback' => 'coloractions_convert_form',
-        'summary theme' => 'coloractions_convert_summary',
-        'module' => 'imagecache_coloractions',
-        'name' => 'coloractions_convert',
-        'data' => array(
-          'format' => 'image/png',
-          'quality' => '75',
-        ),
-        'weight' => '2',
-      ),
-      16 => array(
-        'label' => 'Rounded Corners',
-        'help' => 'This is true cropping, not overlays, so the result <em>can</em> be transparent.',
-        'effect callback' => 'canvasactions_roundedcorners_image',
-        'form callback' => 'canvasactions_roundedcorners_form',
-        'summary theme' => 'canvasactions_roundedcorners_summary',
-        'module' => 'imagecache_canvasactions',
-        'name' => 'canvasactions_roundedcorners',
-        'data' => array(
-          'radius' => '16',
-          'independent_corners_set' => array(
-            'independent_corners' => 0,
-            'radii' => array(
-              'tl' => 0,
-              'tr' => 0,
-              'bl' => 0,
-              'br' => 0,
-            ),
-          ),
-        ),
-        'weight' => '3',
-      ),
-    ),
-  );
-
-  // Exported image style: rounded-rectangle-medium-long
-  $styles['rounded-rectangle-medium-long'] = array(
-    'name' => 'rounded-rectangle-medium-long',
+  // Exported image style: ow_medium-rectangle-rounded
+  $styles['ow_medium-rectangle-rounded'] = array(
+    'name' => 'ow_medium-rectangle-rounded',
     'effects' => array(
       32 => array(
         'label' => 'Scale and crop',
@@ -194,9 +113,55 @@ function open_way_configuration_images_styles_image_default_styles() {
     ),
   );
 
-  // Exported image style: rounded-rectangle-small
-  $styles['rounded-rectangle-small'] = array(
-    'name' => 'rounded-rectangle-small',
+  // Exported image style: ow_medium-square-rounded
+  $styles['ow_medium-square-rounded'] = array(
+    'name' => 'ow_medium-square-rounded',
+    'effects' => array(
+      3 => array(
+        'label' => 'Scale and crop',
+        'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
+        'effect callback' => 'image_scale_and_crop_effect',
+        'dimensions callback' => 'image_resize_dimensions',
+        'form callback' => 'image_resize_form',
+        'summary theme' => 'image_resize_summary',
+        'module' => 'image',
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => '300',
+          'height' => '300',
+        ),
+        'weight' => '-10',
+      ),
+      7 => NULL,
+      8 => NULL,
+    ),
+  );
+
+  // Exported image style: ow_small-rectangle
+  $styles['ow_small-rectangle'] = array(
+    'name' => 'ow_small-rectangle',
+    'effects' => array(
+      18 => array(
+        'label' => 'Scale and crop',
+        'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
+        'effect callback' => 'image_scale_and_crop_effect',
+        'dimensions callback' => 'image_resize_dimensions',
+        'form callback' => 'image_resize_form',
+        'summary theme' => 'image_resize_summary',
+        'module' => 'image',
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => '210',
+          'height' => '120',
+        ),
+        'weight' => '1',
+      ),
+    ),
+  );
+
+  // Exported image style: ow_small-rectangle-rounded
+  $styles['ow_small-rectangle-rounded'] = array(
+    'name' => 'ow_small-rectangle-rounded',
     'effects' => array(
       20 => array(
         'label' => 'Scale and crop',
@@ -218,125 +183,9 @@ function open_way_configuration_images_styles_image_default_styles() {
     ),
   );
 
-  // Exported image style: rounded-square-large
-  $styles['rounded-square-large'] = array(
-    'name' => 'rounded-square-large',
-    'effects' => array(
-      11 => array(
-        'label' => 'Scale and crop',
-        'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
-        'effect callback' => 'image_scale_and_crop_effect',
-        'dimensions callback' => 'image_resize_dimensions',
-        'form callback' => 'image_resize_form',
-        'summary theme' => 'image_resize_summary',
-        'module' => 'image',
-        'name' => 'image_scale_and_crop',
-        'data' => array(
-          'width' => '225',
-          'height' => '225',
-        ),
-        'weight' => '1',
-      ),
-      12 => array(
-        'label' => 'Change file format',
-        'help' => 'Choose to save the image as a different filetype.',
-        'effect callback' => 'coloractions_convert_image',
-        'form callback' => 'coloractions_convert_form',
-        'summary theme' => 'coloractions_convert_summary',
-        'module' => 'imagecache_coloractions',
-        'name' => 'coloractions_convert',
-        'data' => array(
-          'format' => 'image/png',
-          'quality' => '75',
-        ),
-        'weight' => '2',
-      ),
-      13 => array(
-        'label' => 'Rounded Corners',
-        'help' => 'This is true cropping, not overlays, so the result <em>can</em> be transparent.',
-        'effect callback' => 'canvasactions_roundedcorners_image',
-        'form callback' => 'canvasactions_roundedcorners_form',
-        'summary theme' => 'canvasactions_roundedcorners_summary',
-        'module' => 'imagecache_canvasactions',
-        'name' => 'canvasactions_roundedcorners',
-        'data' => array(
-          'radius' => '5',
-          'independent_corners_set' => array(
-            'independent_corners' => 0,
-            'radii' => array(
-              'tl' => 0,
-              'tr' => 0,
-              'bl' => 0,
-              'br' => 0,
-            ),
-          ),
-        ),
-        'weight' => '3',
-      ),
-    ),
-  );
-
-  // Exported image style: rounded-square-medium
-  $styles['rounded-square-medium'] = array(
-    'name' => 'rounded-square-medium',
-    'effects' => array(
-      3 => array(
-        'label' => 'Scale and crop',
-        'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
-        'effect callback' => 'image_scale_and_crop_effect',
-        'dimensions callback' => 'image_resize_dimensions',
-        'form callback' => 'image_resize_form',
-        'summary theme' => 'image_resize_summary',
-        'module' => 'image',
-        'name' => 'image_scale_and_crop',
-        'data' => array(
-          'width' => '300',
-          'height' => '300',
-        ),
-        'weight' => '-10',
-      ),
-      7 => array(
-        'label' => 'Change file format',
-        'help' => 'Choose to save the image as a different filetype.',
-        'effect callback' => 'coloractions_convert_image',
-        'form callback' => 'coloractions_convert_form',
-        'summary theme' => 'coloractions_convert_summary',
-        'module' => 'imagecache_coloractions',
-        'name' => 'coloractions_convert',
-        'data' => array(
-          'format' => 'image/png',
-          'quality' => '75',
-        ),
-        'weight' => '2',
-      ),
-      8 => array(
-        'label' => 'Rounded Corners',
-        'help' => 'This is true cropping, not overlays, so the result <em>can</em> be transparent.',
-        'effect callback' => 'canvasactions_roundedcorners_image',
-        'form callback' => 'canvasactions_roundedcorners_form',
-        'summary theme' => 'canvasactions_roundedcorners_summary',
-        'module' => 'imagecache_canvasactions',
-        'name' => 'canvasactions_roundedcorners',
-        'data' => array(
-          'radius' => '5',
-          'independent_corners_set' => array(
-            'independent_corners' => 0,
-            'radii' => array(
-              'tl' => 0,
-              'tr' => 0,
-              'bl' => 0,
-              'br' => 0,
-            ),
-          ),
-        ),
-        'weight' => '3',
-      ),
-    ),
-  );
-
-  // Exported image style: rounded-square-small
-  $styles['rounded-square-small'] = array(
-    'name' => 'rounded-square-small',
+  // Exported image style: ow_small-square-rounded
+  $styles['ow_small-square-rounded'] = array(
+    'name' => 'ow_small-square-rounded',
     'effects' => array(
       2 => array(
         'label' => 'Scale and crop',
@@ -353,48 +202,14 @@ function open_way_configuration_images_styles_image_default_styles() {
         ),
         'weight' => '-10',
       ),
-      9 => array(
-        'label' => 'Change file format',
-        'help' => 'Choose to save the image as a different filetype.',
-        'effect callback' => 'coloractions_convert_image',
-        'form callback' => 'coloractions_convert_form',
-        'summary theme' => 'coloractions_convert_summary',
-        'module' => 'imagecache_coloractions',
-        'name' => 'coloractions_convert',
-        'data' => array(
-          'format' => 'image/png',
-          'quality' => '75',
-        ),
-        'weight' => '2',
-      ),
-      10 => array(
-        'label' => 'Rounded Corners',
-        'help' => 'This is true cropping, not overlays, so the result <em>can</em> be transparent.',
-        'effect callback' => 'canvasactions_roundedcorners_image',
-        'form callback' => 'canvasactions_roundedcorners_form',
-        'summary theme' => 'canvasactions_roundedcorners_summary',
-        'module' => 'imagecache_canvasactions',
-        'name' => 'canvasactions_roundedcorners',
-        'data' => array(
-          'radius' => '5',
-          'independent_corners_set' => array(
-            'independent_corners' => 0,
-            'radii' => array(
-              'tl' => 0,
-              'tr' => 0,
-              'bl' => 0,
-              'br' => 0,
-            ),
-          ),
-        ),
-        'weight' => '3',
-      ),
+      9 => NULL,
+      10 => NULL,
     ),
   );
 
-  // Exported image style: rounded-square-smaller
-  $styles['rounded-square-smaller'] = array(
-    'name' => 'rounded-square-smaller',
+  // Exported image style: ow_smaller-square-rounded
+  $styles['ow_smaller-square-rounded'] = array(
+    'name' => 'ow_smaller-square-rounded',
     'effects' => array(
       4 => array(
         'label' => 'Scale and crop',
@@ -411,42 +226,8 @@ function open_way_configuration_images_styles_image_default_styles() {
         ),
         'weight' => '-10',
       ),
-      5 => array(
-        'label' => 'Change file format',
-        'help' => 'Choose to save the image as a different filetype.',
-        'effect callback' => 'coloractions_convert_image',
-        'form callback' => 'coloractions_convert_form',
-        'summary theme' => 'coloractions_convert_summary',
-        'module' => 'imagecache_coloractions',
-        'name' => 'coloractions_convert',
-        'data' => array(
-          'format' => 'image/png',
-          'quality' => '75',
-        ),
-        'weight' => '2',
-      ),
-      6 => array(
-        'label' => 'Rounded Corners',
-        'help' => 'This is true cropping, not overlays, so the result <em>can</em> be transparent.',
-        'effect callback' => 'canvasactions_roundedcorners_image',
-        'form callback' => 'canvasactions_roundedcorners_form',
-        'summary theme' => 'canvasactions_roundedcorners_summary',
-        'module' => 'imagecache_canvasactions',
-        'name' => 'canvasactions_roundedcorners',
-        'data' => array(
-          'radius' => '3',
-          'independent_corners_set' => array(
-            'independent_corners' => 0,
-            'radii' => array(
-              'tl' => 0,
-              'tr' => 0,
-              'bl' => 0,
-              'br' => 0,
-            ),
-          ),
-        ),
-        'weight' => '3',
-      ),
+      5 => NULL,
+      6 => NULL,
     ),
   );
 

@@ -13,7 +13,7 @@ function open_way_appearance_classic_theme_gav_default_box() {
   $box = new stdClass;
   $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
   $box->api_version = 1;
-  $box->delta = 'nav_large_gav';
+  $box->delta = 'ow_nav_large_gav';
   $box->plugin_key = 'simple';
   $box->title = '';
   $box->description = 'Large Give Advocate Volunteer Buttons';
@@ -23,12 +23,12 @@ function open_way_appearance_classic_theme_gav_default_box() {
       'format' => 'html_code',
     ),
   );
-  $export['nav_large_gav'] = $box;
+  $export['ow_nav_large_gav'] = $box;
 
   $box = new stdClass;
   $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
   $box->api_version = 1;
-  $box->delta = 'nav_small_gav';
+  $box->delta = 'ow_nav_small_gav';
   $box->plugin_key = 'simple';
   $box->title = '';
   $box->description = 'Navigation Small GAV';
@@ -38,12 +38,12 @@ function open_way_appearance_classic_theme_gav_default_box() {
       'format' => 'html_code',
     ),
   );
-  $export['nav_small_gav'] = $box;
+  $export['ow_nav_small_gav'] = $box;
 
   $box = new stdClass;
   $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
   $box->api_version = 1;
-  $box->delta = 'nav_small_gav_advocate';
+  $box->delta = 'ow_nav_small_gav_advocate';
   $box->plugin_key = 'simple';
   $box->title = '';
   $box->description = 'Navigation Small GAV Advocate';
@@ -53,12 +53,12 @@ function open_way_appearance_classic_theme_gav_default_box() {
       'format' => 'html_code',
     ),
   );
-  $export['nav_small_gav_advocate'] = $box;
+  $export['ow_nav_small_gav_advocate'] = $box;
 
   $box = new stdClass;
   $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
   $box->api_version = 1;
-  $box->delta = 'nav_small_gav_give';
+  $box->delta = 'ow_nav_small_gav_give';
   $box->plugin_key = 'simple';
   $box->title = '';
   $box->description = 'Navigation Small GAV Give';
@@ -68,12 +68,12 @@ function open_way_appearance_classic_theme_gav_default_box() {
       'format' => 'html_code',
     ),
   );
-  $export['nav_small_gav_give'] = $box;
+  $export['ow_nav_small_gav_give'] = $box;
 
   $box = new stdClass;
   $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
   $box->api_version = 1;
-  $box->delta = 'nav_small_gav_volunteer';
+  $box->delta = 'ow_nav_small_gav_volunteer';
   $box->plugin_key = 'simple';
   $box->title = '';
   $box->description = 'Navigation Small GAV Volunteer';
@@ -83,7 +83,7 @@ function open_way_appearance_classic_theme_gav_default_box() {
       'format' => 'html_code',
     ),
   );
-  $export['nav_small_gav_volunteer'] = $box;
+  $export['ow_nav_small_gav_volunteer'] = $box;
 
   return $export;
 }

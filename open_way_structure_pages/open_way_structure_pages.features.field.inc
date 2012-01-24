@@ -10,8 +10,8 @@
 function open_way_structure_pages_field_default_fields() {
   $fields = array();
 
-  // Exported field: 'node-page-body'
-  $fields['node-page-body'] = array(
+  // Exported field: 'node-ow_page-body'
+  $fields['node-ow_page-body'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -41,7 +41,7 @@ function open_way_structure_pages_field_default_fields() {
       'type' => 'text_with_summary',
     ),
     'field_instance' => array(
-      'bundle' => 'page',
+      'bundle' => 'ow_page',
       'default_value' => array(
         0 => array(
           'summary' => '',
@@ -92,14 +92,14 @@ function open_way_structure_pages_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-page-field_tags'
-  $fields['node-page-field_tags'] = array(
+  // Exported field: 'node-ow_page-field_ow_tags'
+  $fields['node-ow_page-field_ow_tags'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_tags',
+      'field_name' => 'field_ow_tags',
       'foreign keys' => array(
         'tid' => array(
           'columns' => array(
@@ -117,7 +117,7 @@ function open_way_structure_pages_field_default_fields() {
       'settings' => array(
         'allowed_values' => array(
           0 => array(
-            'vocabulary' => 'vocabulary_8',
+            'vocabulary' => 'tags',
             'parent' => 0,
           ),
         ),
@@ -127,7 +127,7 @@ function open_way_structure_pages_field_default_fields() {
       'type' => 'taxonomy_term_reference',
     ),
     'field_instance' => array(
-      'bundle' => 'page',
+      'bundle' => 'ow_page',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -147,14 +147,14 @@ function open_way_structure_pages_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_tags',
+      'field_name' => 'field_ow_tags',
       'label' => 'Tags',
       'required' => 0,
       'settings' => array(
         'user_register_form' => FALSE,
       ),
       'widget' => array(
-        'active' => 1,
+        'active' => 0,
         'module' => 'taxonomy',
         'settings' => array(
           'autocomplete_path' => 'taxonomy/autocomplete',
@@ -166,79 +166,22 @@ function open_way_structure_pages_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-page-taxonomy_vocabulary_8'
-  $fields['node-page-taxonomy_vocabulary_8'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '-1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'taxonomy_vocabulary_8',
-      'indexes' => array(
-        'tid' => array(
-          0 => 'tid',
-        ),
-      ),
-      'module' => 'taxonomy',
-      'settings' => array(
-        'allowed_values' => array(
-          0 => array(
-            'vocabulary' => 'vocabulary_8',
-            'parent' => 0,
-          ),
-        ),
-        'required' => FALSE,
-      ),
-      'translatable' => '0',
-      'type' => 'taxonomy_term_reference',
-    ),
-    'field_instance' => array(
-      'bundle' => 'page',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => 'Enter a comma separated list of words that are relevent to the content. Be detailed.',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'taxonomy',
-          'settings' => array(),
-          'type' => 'taxonomy_term_reference_link',
-          'weight' => 10,
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '10',
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'taxonomy_vocabulary_8',
-      'label' => 'Tags',
-      'required' => '0',
-      'settings' => array(
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'module' => 'taxonomy',
-        'settings' => array(
-          'autocomplete_path' => 'taxonomy/autocomplete',
-          'size' => 60,
-        ),
-        'type' => 'taxonomy_autocomplete',
-        'weight' => '2',
-      ),
-    ),
-  );
-
-  // Exported field: 'node-page-upload'
-  $fields['node-page-upload'] = array(
+  // Exported field: 'node-ow_page-upload'
+  $fields['node-ow_page-upload'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'upload',
+      'foreign keys' => array(
+        'fid' => array(
+          'columns' => array(
+            'fid' => 'fid',
+          ),
+          'table' => 'file_managed',
+        ),
+      ),
       'indexes' => array(
         'fid' => array(
           0 => 'fid',
@@ -256,7 +199,7 @@ function open_way_structure_pages_field_default_fields() {
       'type' => 'file',
     ),
     'field_instance' => array(
-      'bundle' => 'page',
+      'bundle' => 'ow_page',
       'deleted' => '0',
       'description' => '',
       'display' => array(
@@ -314,7 +257,6 @@ function open_way_structure_pages_field_default_fields() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Body');
-  t('Enter a comma separated list of words that are relevent to the content. Be detailed.');
   t('File attachments');
   t('Tags');
 

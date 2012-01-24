@@ -60,7 +60,7 @@ function open_way_structure_blog_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_preview_blog';
-  $strongarm->value = 1;
+  $strongarm->value = '1';
   $export['node_preview_blog'] = $strongarm;
 
   $strongarm = new stdClass;
