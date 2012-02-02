@@ -1,0 +1,6 @@
+core = "7.x"
+dependencies[] = "rules"
+description = "Sends an email to all users with the Publisher role every time new content is created."
+features[rules_config][] = "rules_ow_notify_publishers"
+name = "Open Way - Configuration - New Content Notification"
+package = "Features"

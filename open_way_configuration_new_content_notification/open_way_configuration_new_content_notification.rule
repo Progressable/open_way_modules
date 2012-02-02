@@ -1,0 +1,29 @@
+<?php
+/**
+ * @file
+ * open_way_configuration_new_content_notification.rules_defaults.inc
+ */
+
+/**
+ * Implements hook_default_rules_configuration().
+ */
+function open_way_configuration_new_content_notification_default_rules_configuration() {
+  $items = array();
+  $items['rules_ow_notify_publishers'] = entity_import('rules_config', '{ "rules_ow_notify_publishers" : {
+      "LABEL" : "ow_notify_publishers",
+      "PLUGIN" : "reaction rule",
+      "REQUIRES" : [ "rules" ],
+      "ON" : [ "node_insert" ],
+      "DO" : [
+        { "mail_to_users_of_role" : {
+            "roles" : { "value" : { "4" : "4" } },
+            "subject" : "Notice: New content by [node:author]",
+            "message" : "New [node:content-type] content titled [node:title] has been created by [node:author]. \\r\\n\\r\\nReview the content at: [node:url]\\r\\nEdit content at: [node:edit-url] ",
+            "from" : "[site:name]"
+          }
+        }
+      ]
+    }
+  }');
+  return $items;
+}
