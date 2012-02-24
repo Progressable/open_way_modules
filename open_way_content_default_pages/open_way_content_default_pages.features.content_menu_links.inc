@@ -10,8 +10,8 @@
 function open_way_content_default_pages_content_menu_links_defaults() {
   $menu_links = array();
 
-  // Exported menu link: main-menu:node/4
-  $menu_links['main-menu:node/4'] = array(
+  // Exported menu link: main-menu:node/18
+  $menu_links['main-menu:node/18'] = array(
     'menu_name' => 'main-menu',
     'link_path' => 'node-name/about-us',
     'router_path' => 'node/%',
@@ -26,19 +26,19 @@ function open_way_content_default_pages_content_menu_links_defaults() {
     'expanded' => '1',
     'weight' => '-50',
   );
-  // Exported menu link: main-menu:node/6
-  $menu_links['main-menu:node/6'] = array(
+  // Exported menu link: main-menu:node/13
+  $menu_links['main-menu:node/13'] = array(
     'menu_name' => 'main-menu',
     'link_path' => 'node-name/advocate',
     'router_path' => 'node/%',
     'link_title' => 'Advocate',
     'options' => array(),
     'module' => 'menu',
-    'hidden' => '0',
+    'hidden' => '1',
     'external' => '0',
     'has_children' => '0',
     'expanded' => '0',
-    'weight' => '-45',
+    'weight' => '-42',
   );
   // Exported menu link: main-menu:node/12
   $menu_links['main-menu:node/12'] = array(
@@ -50,13 +50,13 @@ function open_way_content_default_pages_content_menu_links_defaults() {
     'module' => 'menu',
     'hidden' => '0',
     'external' => '0',
-    'has_children' => '1',
+    'has_children' => '0',
     'expanded' => '0',
     'weight' => '0',
-    'parent_path' => 'node-name/success-by-6',
+    'parent_path' => 'node-name/education',
   );
-  // Exported menu link: main-menu:node/18
-  $menu_links['main-menu:node/18'] = array(
+  // Exported menu link: main-menu:node/11
+  $menu_links['main-menu:node/11'] = array(
     'menu_name' => 'main-menu',
     'link_path' => 'node-name/campaign-coordinator-toolkit',
     'router_path' => 'node/%',
@@ -67,11 +67,10 @@ function open_way_content_default_pages_content_menu_links_defaults() {
     'external' => '0',
     'has_children' => '0',
     'expanded' => '0',
-    'weight' => '0',
-    'parent_path' => 'node-name/community-campaign',
+    'weight' => '-45',
   );
-  // Exported menu link: main-menu:node/17
-  $menu_links['main-menu:node/17'] = array(
+  // Exported menu link: main-menu:node/14
+  $menu_links['main-menu:node/14'] = array(
     'menu_name' => 'main-menu',
     'link_path' => 'node-name/community-campaign',
     'router_path' => 'node/%',
@@ -82,12 +81,12 @@ function open_way_content_default_pages_content_menu_links_defaults() {
     'module' => 'menu',
     'hidden' => '0',
     'external' => '0',
-    'has_children' => '1',
+    'has_children' => '0',
     'expanded' => '1',
-    'weight' => '-43',
+    'weight' => '-46',
   );
-  // Exported menu link: main-menu:node/20
-  $menu_links['main-menu:node/20'] = array(
+  // Exported menu link: main-menu:node/15
+  $menu_links['main-menu:node/15'] = array(
     'menu_name' => 'main-menu',
     'link_path' => 'node-name/directions',
     'router_path' => 'node/%',
@@ -101,8 +100,8 @@ function open_way_content_default_pages_content_menu_links_defaults() {
     'weight' => '0',
     'parent_path' => 'node-name/about-us',
   );
-  // Exported menu link: main-menu:node/8
-  $menu_links['main-menu:node/8'] = array(
+  // Exported menu link: main-menu:node/17
+  $menu_links['main-menu:node/17'] = array(
     'menu_name' => 'main-menu',
     'link_path' => 'node-name/education',
     'router_path' => 'node/%',
@@ -117,23 +116,8 @@ function open_way_content_default_pages_content_menu_links_defaults() {
     'expanded' => '1',
     'weight' => '-49',
   );
-  // Exported menu link: main-menu:node/13
-  $menu_links['main-menu:node/13'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'node-name/example-sub-page',
-    'router_path' => 'node/%',
-    'link_title' => 'example',
-    'options' => array(),
-    'module' => 'menu',
-    'hidden' => '0',
-    'external' => '0',
-    'has_children' => '0',
-    'expanded' => '0',
-    'weight' => '0',
-    'parent_path' => 'node-name/born-learning',
-  );
-  // Exported menu link: main-menu:node/5
-  $menu_links['main-menu:node/5'] = array(
+  // Exported menu link: main-menu:node/3
+  $menu_links['main-menu:node/3'] = array(
     'menu_name' => 'main-menu',
     'link_path' => 'node-name/give',
     'router_path' => 'node/%',
@@ -142,14 +126,14 @@ function open_way_content_default_pages_content_menu_links_defaults() {
       'attributes' => array(),
     ),
     'module' => 'menu',
-    'hidden' => '0',
+    'hidden' => '1',
     'external' => '0',
     'has_children' => '0',
     'expanded' => '1',
-    'weight' => '-46',
+    'weight' => '-43',
   );
-  // Exported menu link: main-menu:node/10
-  $menu_links['main-menu:node/10'] = array(
+  // Exported menu link: main-menu:node/2
+  $menu_links['main-menu:node/2'] = array(
     'menu_name' => 'main-menu',
     'link_path' => 'node-name/health',
     'router_path' => 'node/%',
@@ -164,8 +148,8 @@ function open_way_content_default_pages_content_menu_links_defaults() {
     'expanded' => '1',
     'weight' => '-47',
   );
-  // Exported menu link: main-menu:node/9
-  $menu_links['main-menu:node/9'] = array(
+  // Exported menu link: main-menu:node/1
+  $menu_links['main-menu:node/1'] = array(
     'menu_name' => 'main-menu',
     'link_path' => 'node-name/income',
     'router_path' => 'node/%',
@@ -180,8 +164,8 @@ function open_way_content_default_pages_content_menu_links_defaults() {
     'expanded' => '1',
     'weight' => '-48',
   );
-  // Exported menu link: main-menu:node/22
-  $menu_links['main-menu:node/22'] = array(
+  // Exported menu link: main-menu:node/4
+  $menu_links['main-menu:node/4'] = array(
     'menu_name' => 'main-menu',
     'link_path' => 'node-name/media-room',
     'router_path' => 'node/%',
@@ -192,10 +176,10 @@ function open_way_content_default_pages_content_menu_links_defaults() {
     'external' => '0',
     'has_children' => '1',
     'expanded' => '0',
-    'weight' => '0',
+    'weight' => '-44',
   );
-  // Exported menu link: main-menu:node/19
-  $menu_links['main-menu:node/19'] = array(
+  // Exported menu link: main-menu:node/5
+  $menu_links['main-menu:node/5'] = array(
     'menu_name' => 'main-menu',
     'link_path' => 'node-name/our-community',
     'router_path' => 'node/%',
@@ -209,8 +193,8 @@ function open_way_content_default_pages_content_menu_links_defaults() {
     'weight' => '0',
     'parent_path' => 'node-name/about-us',
   );
-  // Exported menu link: main-menu:node/11
-  $menu_links['main-menu:node/11'] = array(
+  // Exported menu link: main-menu:node/8
+  $menu_links['main-menu:node/8'] = array(
     'menu_name' => 'main-menu',
     'link_path' => 'node-name/success-by-6',
     'router_path' => 'node/%',
@@ -234,14 +218,14 @@ function open_way_content_default_pages_content_menu_links_defaults() {
       'attributes' => array(),
     ),
     'module' => 'menu',
-    'hidden' => '0',
+    'hidden' => '1',
     'external' => '0',
     'has_children' => '0',
     'expanded' => '1',
-    'weight' => '-44',
+    'weight' => '-41',
   );
-  // Exported menu link: main-menu:node/21
-  $menu_links['main-menu:node/21'] = array(
+  // Exported menu link: main-menu:node/6
+  $menu_links['main-menu:node/6'] = array(
     'menu_name' => 'main-menu',
     'link_path' => 'node-name/volunteer-leadership',
     'router_path' => 'node/%',
@@ -254,21 +238,6 @@ function open_way_content_default_pages_content_menu_links_defaults() {
     'expanded' => '0',
     'weight' => '0',
     'parent_path' => 'node-name/about-us',
-  );
-  // Exported menu link: main-menu:taxonomy/term/1
-  $menu_links['main-menu:taxonomy/term/1'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'taxonomy/term/1',
-    'router_path' => 'taxonomy/term/%',
-    'link_title' => 'Taxonomy term',
-    'options' => array(),
-    'module' => 'menu',
-    'hidden' => '0',
-    'external' => '0',
-    'has_children' => '0',
-    'expanded' => '0',
-    'weight' => '-50',
-    'parent_path' => 'node-name/media-room',
   );
   // Translatables
   // Included for use with string extractors like potx.
@@ -285,10 +254,8 @@ function open_way_content_default_pages_content_menu_links_defaults() {
   t('Income');
   t('Media');
   t('Success By 6');
-  t('Taxonomy term');
   t('Volunteer');
   t('Volunteer Leadership');
-  t('example');
 
 
   return $menu_links;
