@@ -247,14 +247,14 @@ function open_way_structure_story_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-ow_story-field_ow_tags'
-  $fields['node-ow_story-field_ow_tags'] = array(
+  // Exported field: 'node-ow_story-field_ow_story_tags'
+  $fields['node-ow_story-field_ow_story_tags'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_ow_tags',
+      'field_name' => 'field_ow_story_tags',
       'foreign keys' => array(
         'tid' => array(
           'columns' => array(
@@ -273,7 +273,7 @@ function open_way_structure_story_field_default_fields() {
         'allowed_values' => array(
           0 => array(
             'vocabulary' => 'tags',
-            'parent' => 0,
+            'parent' => '0',
           ),
         ),
         'profile2_private' => FALSE,
@@ -292,31 +292,31 @@ function open_way_structure_story_field_default_fields() {
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => '4',
+          'weight' => '2',
         ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '0',
+          'weight' => 0,
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_ow_tags',
+      'field_name' => 'field_ow_story_tags',
       'label' => 'Tags',
       'required' => 0,
       'settings' => array(
         'user_register_form' => FALSE,
       ),
       'widget' => array(
-        'active' => 1,
+        'active' => 0,
         'module' => 'taxonomy',
         'settings' => array(
           'autocomplete_path' => 'taxonomy/autocomplete',
           'size' => 60,
         ),
         'type' => 'taxonomy_autocomplete',
-        'weight' => '5',
+        'weight' => '3',
       ),
     ),
   );
@@ -363,7 +363,7 @@ function open_way_structure_story_field_default_fields() {
           'module' => 'file',
           'settings' => array(),
           'type' => 'file_table',
-          'weight' => '2',
+          'weight' => '3',
         ),
         'full' => array(
           'label' => 'hidden',
@@ -403,7 +403,7 @@ function open_way_structure_story_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'file_generic',
-        'weight' => '3',
+        'weight' => '4',
       ),
     ),
   );

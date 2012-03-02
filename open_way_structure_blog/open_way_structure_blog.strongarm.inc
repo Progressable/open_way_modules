@@ -74,7 +74,7 @@ function open_way_structure_blog_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_blog_pattern';
-  $strongarm->value = 'blogs/[user-raw]';
+  $strongarm->value = '';
   $export['pathauto_blog_pattern'] = $strongarm;
 
   $strongarm = new stdClass;

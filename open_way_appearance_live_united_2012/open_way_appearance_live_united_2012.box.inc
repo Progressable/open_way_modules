@@ -32,6 +32,22 @@ function open_way_appearance_live_united_2012_default_box() {
   $box = new stdClass;
   $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
   $box->api_version = 1;
+  $box->delta = 'ow_copyright';
+  $box->plugin_key = 'simple';
+  $box->title = '<none>';
+  $box->description = 'Copyright';
+  $box->options = array(
+    'body' => array(
+      'value' => '<div id="copyright" style="text-align: center;"><span>&copy;2012 United Way of Anytown.</span></div>',
+      'format' => 'html_code',
+    ),
+    'additional_classes' => '',
+  );
+  $export['ow_copyright'] = $box;
+
+  $box = new stdClass;
+  $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
+  $box->api_version = 1;
   $box->delta = 'ow_gav_actionboxes_2012';
   $box->plugin_key = 'simple';
   $box->title = '<none>';
@@ -57,9 +73,10 @@ function open_way_appearance_live_united_2012_default_box() {
   $box->description = 'Navigation Donation Button 2012';
   $box->options = array(
     'body' => array(
-      'value' => '<h3 id="nav-donate"><a href="/donate"><img src="/sites/all/themes/live_united_2012/images/nav-donate.gif" alt="Donate"></a></h3>',
+      'value' => '<div class="nav-donate-wrapper"><h3 id="nav-donate"><a href="/donate"><span>Donate</span></a></h3></div>',
       'format' => 'html_code',
     ),
+    'additional_classes' => '',
   );
   $export['ow_navigation_donation_button'] = $box;
 
@@ -73,14 +90,15 @@ function open_way_appearance_live_united_2012_default_box() {
   $box->options = array(
     'body' => array(
       'value' => '<div class="social-media-links">
-<a class="facebook-icon" href="http://www.facebook.com/UWCNCT" title="Facebook"><span class="displace">Facebook</span></a>
-<a class="twitter-icon" href="http://twitter.com/unitedwayinc" title="Twitter"><span class="displace">Twitter</span></a>
-<a class="youtube-icon" href="http://www.youtube.com/uwcnct" title="You Tube"><span class="displace">You Tube</span></a>
-<a class="linkedin-icon" href="http://www.linkedin.com/groups/United-Way-Central-Northeastern-Connecticut-3908067" title="Linked In"><span class="displace">Linked In</span></a>
+<a class="facebook-icon" href="http://www.facebook.com/UWAnytown" title="Facebook"><span class="displace">Facebook</span></a>
+<a class="twitter-icon" href="http://twitter.com/UWAnytown" title="Twitter"><span class="displace">Twitter</span></a>
+<a class="youtube-icon" href="http://www.youtube.com/UWAnytown" title="You Tube"><span class="displace">You Tube</span></a>
+<a class="linkedin-icon" href="http://www.linkedin.com/groups/UWAnytown" title="Linked In"><span class="displace">Linked In</span></a>
 
 </div>',
       'format' => 'html_code',
     ),
+    'additional_classes' => '',
   );
   $export['ow_social_media_buttons_box'] = $box;
 

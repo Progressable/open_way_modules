@@ -17,7 +17,7 @@ function open_way_structure_blogger_bio_views_default_views() {
   $view->base_table = 'users';
   $view->human_name = 'Blog Top Mini Profile';
   $view->core = 7;
-  $view->api_version = '3.0-alpha1';
+  $view->api_version = '3.0';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
 
   /* Display: Master */
@@ -59,7 +59,6 @@ function open_way_structure_blogger_bio_views_default_views() {
   $handler->display->display_options['fields']['picture']['hide_empty'] = 1;
   $handler->display->display_options['fields']['picture']['empty_zero'] = 0;
   $handler->display->display_options['fields']['picture']['hide_alter_empty'] = 0;
-  $handler->display->display_options['fields']['picture']['imagecache_preset'] = 'user_picture_medium';
   /* Field: User: Name */
   $handler->display->display_options['fields']['name_1']['id'] = 'name_1';
   $handler->display->display_options['fields']['name_1']['table'] = 'users';

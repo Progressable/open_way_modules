@@ -20,8 +20,8 @@ function open_way_structure_blogger_bio_views_api() {
 function open_way_structure_blogger_bio_default_profile2_type() {
   $items = array();
   $items['blogging_profile'] = entity_import('profile2_type', '{
-    "userCategory" : false,
-    "userView" : false,
+    "userCategory" : true,
+    "userView" : true,
     "type" : "blogging_profile",
     "label" : "Blogging Profile",
     "weight" : "0",
