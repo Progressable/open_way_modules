@@ -47,7 +47,7 @@ function open_way_structure_pages_field_default_fields() {
           'summary' => '',
           'value' => '<p>Text here.</p>
 ',
-          'format' => '2',
+          'format' => 'filtered_html',
         ),
       ),
       'deleted' => '0',
@@ -58,7 +58,7 @@ function open_way_structure_pages_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => 0,
+          'weight' => '0',
         ),
         'teaser' => array(
           'label' => 'hidden',
@@ -75,7 +75,7 @@ function open_way_structure_pages_field_default_fields() {
       'label' => 'Body',
       'required' => 0,
       'settings' => array(
-        'display_summary' => 1,
+        'display_summary' => 0,
         'text_processing' => '1',
         'user_register_form' => FALSE,
       ),
@@ -92,14 +92,14 @@ function open_way_structure_pages_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-ow_page-field_ow_tags'
-  $fields['node-ow_page-field_ow_tags'] = array(
+  // Exported field: 'node-ow_page-field_ow_page_tags'
+  $fields['node-ow_page-field_ow_page_tags'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_ow_tags',
+      'field_name' => 'field_ow_page_tags',
       'foreign keys' => array(
         'tid' => array(
           'columns' => array(
@@ -118,7 +118,7 @@ function open_way_structure_pages_field_default_fields() {
         'allowed_values' => array(
           0 => array(
             'vocabulary' => 'tags',
-            'parent' => 0,
+            'parent' => '0',
           ),
         ),
         'profile2_private' => FALSE,
@@ -137,7 +137,7 @@ function open_way_structure_pages_field_default_fields() {
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => 11,
+          'weight' => 2,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -147,21 +147,18 @@ function open_way_structure_pages_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_ow_tags',
+      'field_name' => 'field_ow_page_tags',
       'label' => 'Tags',
       'required' => 0,
       'settings' => array(
         'user_register_form' => FALSE,
       ),
       'widget' => array(
-        'active' => 0,
-        'module' => 'taxonomy',
-        'settings' => array(
-          'autocomplete_path' => 'taxonomy/autocomplete',
-          'size' => 60,
-        ),
-        'type' => 'taxonomy_autocomplete',
-        'weight' => '3',
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_select',
+        'weight' => '2',
       ),
     ),
   );
@@ -208,7 +205,7 @@ function open_way_structure_pages_field_default_fields() {
           'module' => 'file',
           'settings' => array(),
           'type' => 'file_table',
-          'weight' => 0,
+          'weight' => '1',
         ),
         'full' => array(
           'label' => 'hidden',
@@ -249,7 +246,7 @@ function open_way_structure_pages_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'file_generic',
-        'weight' => '4',
+        'weight' => '3',
       ),
     ),
   );

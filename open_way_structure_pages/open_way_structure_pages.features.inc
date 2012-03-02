@@ -22,8 +22,7 @@ function open_way_structure_pages_node_info() {
     'ow_page' => array(
       'name' => t('Page'),
       'base' => 'node_content',
-      'description' => t('<h3>What are Pages</h3>
-<p>A simple method for creating and displaying information that rarely changes, such as an &quot;About us&quot; section of a website. By default, a&nbsp;page&nbsp;entry does not allow visitor comments</p>
+      'description' => t('A simple method for creating and displaying information that rarely changes, such as an &quot;About us&quot; section of a website. By default, a&nbsp;page&nbsp;entry does not allow visitor comments.
 '),
       'has_title' => '1',
       'title_label' => t('Title'),
