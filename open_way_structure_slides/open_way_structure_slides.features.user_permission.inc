@@ -16,7 +16,8 @@ function open_way_structure_slides_user_default_permissions() {
     'roles' => array(
       0 => 'Level0 - Webmaster',
       1 => 'Level1 - Administrator',
-      2 => 'Level2 - Publisher',
+      2 => 'Level2 - Manager',
+      3 => 'Level3 - Publisher',
     ),
     'module' => 'node',
   );
@@ -27,7 +28,8 @@ function open_way_structure_slides_user_default_permissions() {
     'roles' => array(
       0 => 'Level0 - Webmaster',
       1 => 'Level1 - Administrator',
-      2 => 'Level2 - Publisher',
+      2 => 'Level2 - Manager',
+      3 => 'Level3 - Publisher',
     ),
     'module' => 'node',
   );
@@ -38,7 +40,8 @@ function open_way_structure_slides_user_default_permissions() {
     'roles' => array(
       0 => 'Level0 - Webmaster',
       1 => 'Level1 - Administrator',
-      2 => 'Level2 - Publisher',
+      2 => 'Level2 - Manager',
+      3 => 'Level3 - Publisher',
     ),
     'module' => 'node',
   );
@@ -49,7 +52,8 @@ function open_way_structure_slides_user_default_permissions() {
     'roles' => array(
       0 => 'Level0 - Webmaster',
       1 => 'Level1 - Administrator',
-      2 => 'Level2 - Publisher',
+      2 => 'Level2 - Manager',
+      3 => 'Level3 - Publisher',
     ),
     'module' => 'node',
   );
@@ -60,7 +64,8 @@ function open_way_structure_slides_user_default_permissions() {
     'roles' => array(
       0 => 'Level0 - Webmaster',
       1 => 'Level1 - Administrator',
-      2 => 'Level2 - Publisher',
+      2 => 'Level2 - Manager',
+      3 => 'Level3 - Publisher',
     ),
     'module' => 'node',
   );

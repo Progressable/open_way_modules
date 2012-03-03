@@ -14,7 +14,7 @@ function open_way_structure_blog_user_default_permissions() {
   $permissions['create blog content'] = array(
     'name' => 'create blog content',
     'roles' => array(
-      0 => 'Level5 - Blogger',
+      0 => 'Type - Blogger',
     ),
     'module' => 'node',
   );
@@ -24,7 +24,8 @@ function open_way_structure_blog_user_default_permissions() {
     'name' => 'delete any blog content',
     'roles' => array(
       0 => 'Level1 - Administrator',
-      1 => 'Level2 - Publisher',
+      1 => 'Level2 - Manager',
+      2 => 'Level3 - Publisher',
     ),
     'module' => 'node',
   );
@@ -34,7 +35,8 @@ function open_way_structure_blog_user_default_permissions() {
     'name' => 'delete own blog content',
     'roles' => array(
       0 => 'Level1 - Administrator',
-      1 => 'Level2 - Publisher',
+      1 => 'Level2 - Manager',
+      2 => 'Level3 - Publisher',
     ),
     'module' => 'node',
   );
@@ -45,8 +47,9 @@ function open_way_structure_blog_user_default_permissions() {
     'roles' => array(
       0 => 'Extra - Content',
       1 => 'Level1 - Administrator',
-      2 => 'Level2 - Publisher',
-      3 => 'Level3 - Editor',
+      2 => 'Level2 - Manager',
+      3 => 'Level3 - Publisher',
+      4 => 'Level4 - Editor',
     ),
     'module' => 'node',
   );
@@ -55,7 +58,7 @@ function open_way_structure_blog_user_default_permissions() {
   $permissions['edit own blog content'] = array(
     'name' => 'edit own blog content',
     'roles' => array(
-      0 => 'Level5 - Blogger',
+      0 => 'Type - Blogger',
     ),
     'module' => 'node',
   );

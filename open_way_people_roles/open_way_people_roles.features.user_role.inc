@@ -13,31 +13,31 @@ function open_way_people_roles_user_default_roles() {
   // Exported role: Extra - Blocks
   $roles['Extra - Blocks'] = array(
     'name' => 'Extra - Blocks',
-    'weight' => '0',
+    'weight' => '10',
   );
 
   // Exported role: Extra - Content
   $roles['Extra - Content'] = array(
     'name' => 'Extra - Content',
-    'weight' => '0',
+    'weight' => '11',
   );
 
   // Exported role: Extra - Forms
   $roles['Extra - Forms'] = array(
     'name' => 'Extra - Forms',
-    'weight' => '0',
+    'weight' => '12',
   );
 
   // Exported role: Extra - Menus and URL
   $roles['Extra - Menus and URL'] = array(
     'name' => 'Extra - Menus and URL',
-    'weight' => '0',
+    'weight' => '13',
   );
 
   // Exported role: Extra - Users
   $roles['Extra - Users'] = array(
     'name' => 'Extra - Users',
-    'weight' => '0',
+    'weight' => '14',
   );
 
   // Exported role: Level0 - Webmaster
@@ -49,37 +49,13 @@ function open_way_people_roles_user_default_roles() {
   // Exported role: Level1 - Administrator
   $roles['Level1 - Administrator'] = array(
     'name' => 'Level1 - Administrator',
-    'weight' => '0',
-  );
-
-  // Exported role: Level2 - Publisher
-  $roles['Level2 - Publisher'] = array(
-    'name' => 'Level2 - Publisher',
-    'weight' => '0',
-  );
-
-  // Exported role: Level3 - Editor
-  $roles['Level3 - Editor'] = array(
-    'name' => 'Level3 - Editor',
-    'weight' => '0',
-  );
-
-  // Exported role: Level4 - Contributer
-  $roles['Level4 - Contributer'] = array(
-    'name' => 'Level4 - Contributer',
-    'weight' => '0',
-  );
-
-  // Exported role: Level5 - Blogger
-  $roles['Level5 - Blogger'] = array(
-    'name' => 'Level5 - Blogger',
-    'weight' => '0',
+    'weight' => '3',
   );
 
   // Exported role: Type - Partner
   $roles['Type - Partner'] = array(
     'name' => 'Type - Partner',
-    'weight' => '0',
+    'weight' => '9',
   );
 
   return $roles;

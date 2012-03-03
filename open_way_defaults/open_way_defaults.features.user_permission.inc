@@ -68,8 +68,9 @@ function open_way_defaults_user_default_permissions() {
       2 => 'Extra - Menus and URL',
       3 => 'Level0 - Webmaster',
       4 => 'Level1 - Administrator',
-      5 => 'Level2 - Publisher',
-      6 => 'Level3 - Editor',
+      5 => 'Level2 - Manager',
+      6 => 'Level3 - Publisher',
+      7 => 'Level4 - Editor',
     ),
     'module' => 'contextual',
   );
@@ -81,7 +82,8 @@ function open_way_defaults_user_default_permissions() {
       0 => 'Extra - Blocks',
       1 => 'Extra - Menus and URL',
       2 => 'Level1 - Administrator',
-      3 => 'Level2 - Publisher',
+      3 => 'Level2 - Manager',
+      4 => 'Level3 - Publisher',
     ),
     'module' => 'dashboard',
   );
@@ -97,8 +99,9 @@ function open_way_defaults_user_default_permissions() {
       4 => 'Extra - Users',
       5 => 'Level0 - Webmaster',
       6 => 'Level1 - Administrator',
-      7 => 'Level2 - Publisher',
-      8 => 'Level3 - Editor',
+      7 => 'Level2 - Manager',
+      8 => 'Level3 - Publisher',
+      9 => 'Level4 - Editor',
     ),
     'module' => 'overlay',
   );
@@ -133,9 +136,10 @@ function open_way_defaults_user_default_permissions() {
       4 => 'Extra - Users',
       5 => 'Level0 - Webmaster',
       6 => 'Level1 - Administrator',
-      7 => 'Level2 - Publisher',
-      8 => 'Level3 - Editor',
-      9 => 'Level4 - Contributer',
+      7 => 'Level2 - Manager',
+      8 => 'Level3 - Publisher',
+      9 => 'Level4 - Editor',
+      10 => 'Level5 - Contributer',
     ),
     'module' => 'toolbar',
   );
@@ -156,11 +160,12 @@ function open_way_defaults_user_default_permissions() {
     'roles' => array(
       0 => 'Extra - Content',
       1 => 'Level1 - Administrator',
-      2 => 'Level2 - Publisher',
-      3 => 'Level3 - Editor',
-      4 => 'Level4 - Contributer',
-      5 => 'Level5 - Blogger',
-      6 => 'Type - Partner',
+      2 => 'Level2 - Manager',
+      3 => 'Level3 - Publisher',
+      4 => 'Level4 - Editor',
+      5 => 'Level5 - Contributer',
+      6 => 'Type - Blogger',
+      7 => 'Type - Partner',
     ),
     'module' => 'media_internet',
   );
@@ -190,6 +195,7 @@ function open_way_defaults_user_default_permissions() {
       0 => 'Extra - Blocks',
       1 => 'Level0 - Webmaster',
       2 => 'Level1 - Administrator',
+      3 => 'Level2 - Manager',
     ),
     'module' => 'block',
   );
@@ -209,6 +215,7 @@ function open_way_defaults_user_default_permissions() {
     'name' => 'administer comments',
     'roles' => array(
       0 => 'Level1 - Administrator',
+      1 => 'Level2 - Manager',
     ),
     'module' => 'comment',
   );
@@ -264,7 +271,7 @@ function open_way_defaults_user_default_permissions() {
     'roles' => array(
       0 => 'Extra - Menus and URL',
       1 => 'Level1 - Administrator',
-      2 => 'Level2 - Publisher',
+      2 => 'Level2 - Manager',
     ),
     'module' => 'menu',
   );
@@ -322,6 +329,7 @@ function open_way_defaults_user_default_permissions() {
     'roles' => array(
       0 => 'Extra - Menus and URL',
       1 => 'Level1 - Administrator',
+      2 => 'Level2 - Manager',
     ),
     'module' => 'redirect',
   );
@@ -341,6 +349,7 @@ function open_way_defaults_user_default_permissions() {
     'roles' => array(
       0 => 'Level0 - Webmaster',
       1 => 'Level1 - Administrator',
+      2 => 'Level2 - Manager',
     ),
     'module' => 'shortcut',
   );
@@ -377,6 +386,7 @@ function open_way_defaults_user_default_permissions() {
     'name' => 'administer themes',
     'roles' => array(
       0 => 'Level0 - Webmaster',
+      1 => 'Level1 - Administrator',
     ),
     'module' => 'system',
   );
@@ -388,6 +398,7 @@ function open_way_defaults_user_default_permissions() {
       0 => 'Extra - Menus and URL',
       1 => 'Level0 - Webmaster',
       2 => 'Level1 - Administrator',
+      3 => 'Level2 - Manager',
     ),
     'module' => 'path',
   );
@@ -398,6 +409,7 @@ function open_way_defaults_user_default_permissions() {
     'roles' => array(
       0 => 'Extra - Users',
       1 => 'Level1 - Administrator',
+      2 => 'Level2 - Manager',
     ),
     'module' => 'user',
   );
@@ -417,6 +429,7 @@ function open_way_defaults_user_default_permissions() {
     'roles' => array(
       0 => 'Level0 - Webmaster',
       1 => 'Level1 - Administrator',
+      2 => 'Level2 - Manager',
     ),
     'module' => 'system',
   );
@@ -435,10 +448,10 @@ function open_way_defaults_user_default_permissions() {
     'name' => 'change own username',
     'roles' => array(
       0 => 'Level1 - Administrator',
-      1 => 'Level2 - Publisher',
-      2 => 'Level3 - Editor',
-      3 => 'Level4 - Contributer',
-      4 => 'Level5 - Blogger',
+      1 => 'Level3 - Publisher',
+      2 => 'Level4 - Editor',
+      3 => 'Level5 - Contributer',
+      4 => 'Type - Blogger',
       5 => 'Type - Partner',
       6 => 'authenticated user',
     ),
@@ -452,7 +465,8 @@ function open_way_defaults_user_default_permissions() {
       0 => 'Extra - Menus and URL',
       1 => 'Level0 - Webmaster',
       2 => 'Level1 - Administrator',
-      3 => 'Level2 - Publisher',
+      3 => 'Level2 - Manager',
+      4 => 'Level3 - Publisher',
     ),
     'module' => 'path',
   );
@@ -463,6 +477,7 @@ function open_way_defaults_user_default_permissions() {
     'roles' => array(
       0 => 'Level0 - Webmaster',
       1 => 'Level1 - Administrator',
+      2 => 'Level2 - Manager',
     ),
     'module' => 'shortcut',
   );
@@ -482,7 +497,8 @@ function open_way_defaults_user_default_permissions() {
     'roles' => array(
       0 => 'Level0 - Webmaster',
       1 => 'Level1 - Administrator',
-      2 => 'Level2 - Publisher',
+      2 => 'Level2 - Manager',
+      3 => 'Level3 - Publisher',
     ),
     'module' => 'taxonomy',
   );
@@ -494,8 +510,9 @@ function open_way_defaults_user_default_permissions() {
       0 => 'Extra - Blocks',
       1 => 'Level0 - Webmaster',
       2 => 'Level1 - Administrator',
-      3 => 'Level2 - Publisher',
-      4 => 'Level3 - Editor',
+      3 => 'Level2 - Manager',
+      4 => 'Level3 - Publisher',
+      5 => 'Level4 - Editor',
     ),
     'module' => 'boxes',
   );
@@ -506,8 +523,10 @@ function open_way_defaults_user_default_permissions() {
     'roles' => array(
       0 => 'Extra - Content',
       1 => 'Level0 - Webmaster',
-      2 => 'Level2 - Publisher',
-      3 => 'Level3 - Editor',
+      2 => 'Level1 - Administrator',
+      3 => 'Level2 - Manager',
+      4 => 'Level3 - Publisher',
+      5 => 'Level4 - Editor',
     ),
     'module' => 'file_entity',
   );
@@ -518,8 +537,9 @@ function open_way_defaults_user_default_permissions() {
     'roles' => array(
       0 => 'Extra - Content',
       1 => 'Level1 - Administrator',
-      2 => 'Level2 - Publisher',
-      3 => 'Level3 - Editor',
+      2 => 'Level2 - Manager',
+      3 => 'Level3 - Publisher',
+      4 => 'Level4 - Editor',
     ),
     'module' => 'media',
   );
@@ -536,8 +556,9 @@ function open_way_defaults_user_default_permissions() {
     'roles' => array(
       0 => 'Level0 - Webmaster',
       1 => 'Level1 - Administrator',
-      2 => 'Level2 - Publisher',
-      3 => 'Level3 - Editor',
+      2 => 'Level2 - Manager',
+      3 => 'Level3 - Publisher',
+      4 => 'Level4 - Editor',
     ),
     'module' => 'taxonomy',
   );
@@ -549,11 +570,12 @@ function open_way_defaults_user_default_permissions() {
       0 => 'Extra - Content',
       1 => 'Level0 - Webmaster',
       2 => 'Level1 - Administrator',
-      3 => 'Level2 - Publisher',
-      4 => 'Level3 - Editor',
-      5 => 'Level4 - Contributer',
-      6 => 'Level5 - Blogger',
-      7 => 'Type - Partner',
+      3 => 'Level2 - Manager',
+      4 => 'Level3 - Publisher',
+      5 => 'Level4 - Editor',
+      6 => 'Level5 - Contributer',
+      7 => 'Type - Blogger',
+      8 => 'Type - Partner',
     ),
     'module' => 'media',
   );
@@ -608,9 +630,10 @@ function open_way_defaults_user_default_permissions() {
     'roles' => array(
       0 => 'Level0 - Webmaster',
       1 => 'Level1 - Administrator',
-      2 => 'Level2 - Publisher',
-      3 => 'Level3 - Editor',
-      4 => 'Level4 - Contributer',
+      2 => 'Level2 - Manager',
+      3 => 'Level3 - Publisher',
+      4 => 'Level4 - Editor',
+      5 => 'Level5 - Contributer',
     ),
     'module' => 'save_draft',
   );
@@ -695,6 +718,7 @@ function open_way_defaults_user_default_permissions() {
     'roles' => array(
       0 => 'Level0 - Webmaster',
       1 => 'Level1 - Administrator',
+      2 => 'Level2 - Manager',
     ),
     'module' => 'shortcut',
   );
@@ -705,11 +729,12 @@ function open_way_defaults_user_default_permissions() {
     'roles' => array(
       0 => 'Level0 - Webmaster',
       1 => 'Level1 - Administrator',
-      2 => 'Level2 - Publisher',
-      3 => 'Level3 - Editor',
-      4 => 'Level4 - Contributer',
-      5 => 'Level5 - Blogger',
-      6 => 'Type - Partner',
+      2 => 'Level2 - Manager',
+      3 => 'Level3 - Publisher',
+      4 => 'Level4 - Editor',
+      5 => 'Level5 - Contributer',
+      6 => 'Type - Blogger',
+      7 => 'Type - Partner',
     ),
     'module' => 'search',
   );
@@ -721,10 +746,10 @@ function open_way_defaults_user_default_permissions() {
       0 => 'Extra - Content',
       1 => 'Level0 - Webmaster',
       2 => 'Level1 - Administrator',
-      3 => 'Level2 - Publisher',
-      4 => 'Level3 - Editor',
-      5 => 'Level4 - Contributer',
-      6 => 'Level5 - Blogger',
+      3 => 'Level3 - Publisher',
+      4 => 'Level4 - Editor',
+      5 => 'Level5 - Contributer',
+      6 => 'Type - Blogger',
       7 => 'Type - Partner',
     ),
     'module' => 'filter',
@@ -737,8 +762,8 @@ function open_way_defaults_user_default_permissions() {
       0 => 'Extra - Content',
       1 => 'Level0 - Webmaster',
       2 => 'Level1 - Administrator',
-      3 => 'Level2 - Publisher',
-      4 => 'Level3 - Editor',
+      3 => 'Level3 - Publisher',
+      4 => 'Level4 - Editor',
     ),
     'module' => 'filter',
   );
@@ -750,8 +775,8 @@ function open_way_defaults_user_default_permissions() {
       0 => 'Extra - Content',
       1 => 'Level0 - Webmaster',
       2 => 'Level1 - Administrator',
-      3 => 'Level2 - Publisher',
-      4 => 'Level3 - Editor',
+      3 => 'Level3 - Publisher',
+      4 => 'Level4 - Editor',
     ),
     'module' => 'filter',
   );
@@ -776,9 +801,9 @@ function open_way_defaults_user_default_permissions() {
       3 => 'Extra - Menus and URL',
       4 => 'Extra - Users',
       5 => 'Level1 - Administrator',
-      6 => 'Level2 - Publisher',
-      7 => 'Level3 - Editor',
-      8 => 'Level4 - Contributer',
+      6 => 'Level3 - Publisher',
+      7 => 'Level4 - Editor',
+      8 => 'Level5 - Contributer',
     ),
     'module' => 'system',
   );

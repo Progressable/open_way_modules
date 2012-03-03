@@ -17,6 +17,7 @@ function open_way_structure_blogger_bio_user_default_permissions() {
       0 => 'Extra - Users',
       1 => 'Level0 - Webmaster',
       2 => 'Level1 - Administrator',
+      3 => 'Level2 - Manager',
     ),
     'module' => 'profile2',
   );
