@@ -109,8 +109,6 @@ features[user_permission][] = "use text format full_html"
 features[user_permission][] = "use text format html_code"
 features[user_permission][] = "view file"
 features[user_permission][] = "view the administration theme"
-features[variable][] = "site_frontpage"
-features[variable][] = "site_name"
 description = "Provides Defaults for Open Way"
 
 name = "Open Way Defaults"

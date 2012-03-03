@@ -3,8 +3,6 @@
 /*
  * implimentation of hook_install
  *
- * we are removing the default openomega as we set that in code
- * we also enable the openomega so it can become default
  */
 function open_way_defaults_install() {
 
