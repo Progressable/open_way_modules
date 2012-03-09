@@ -148,7 +148,7 @@ function open_way_structure_front_page_slideshow_views_default_views() {
   $handler->display->display_options['fields']['field_ow_slide_image']['hide_alter_empty'] = 1;
   $handler->display->display_options['fields']['field_ow_slide_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ow_slide_image']['settings'] = array(
-    'image_style' => 'ow_larger-rectangle',
+    'image_style' => 'ow_large-rectangle',
     'image_link' => '',
   );
   $handler->display->display_options['fields']['field_ow_slide_image']['field_api_classes'] = 0;

@@ -48,6 +48,22 @@ function open_way_appearance_live_united_2012_default_box() {
   $box = new stdClass;
   $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
   $box->api_version = 1;
+  $box->delta = 'ow_eih_welcome';
+  $box->plugin_key = 'simple';
+  $box->title = '<none>';
+  $box->description = 'Education, Income and Health Welcome Statement';
+  $box->options = array(
+    'body' => array(
+      'value' => '<div id="summary"><br /><h3>EDUCATION. INCOME. HEALTH.</h3><p>We envision a world where all individuals and families achieve their human potential through education, income stability and healthy lives... <a href="/about-us">Learn&nbsp;more&nbsp;&raquo;</a></p></div>',
+      'format' => 'filtered_html',
+    ),
+    'additional_classes' => '',
+  );
+  $export['ow_eih_welcome'] = $box;
+
+  $box = new stdClass;
+  $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
+  $box->api_version = 1;
   $box->delta = 'ow_gav_actionboxes_2012';
   $box->plugin_key = 'simple';
   $box->title = '<none>';

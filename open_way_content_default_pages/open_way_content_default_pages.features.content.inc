@@ -84,52 +84,7 @@ function open_way_content_default_pages_content_defaults() {
       'und' => array(
         0 => array(
           'value' => '<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-              ',
-          'summary' => '',
-          'format' => 'filtered_html',
-          'safe_value' => '<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-  ',
-          'safe_summary' => '',
-        ),
-      ),
-    ),
-  );
-
-  $content['born-learning'] = (object) array(
-    'exported_path' => 'education/born-learning',
-    'link' => array(
-      'menu_name' => 'main-menu',
-      'link_path' => 'node-name/born-learning',
-      'router_path' => 'node/%',
-      'link_title' => 'Born Learning',
-      'options' => array(
-        'attributes' => array(
-          'title' => '',
-        ),
-      ),
-      'module' => 'menu',
-      'hidden' => '0',
-      'external' => '0',
-      'has_children' => '0',
-      'expanded' => '0',
-      'weight' => '-50',
-      'parent_path' => 'node-name/education',
-      'identifier' => 'main-menu:node-name/born-learning',
-    ),
-    'title' => 'Born Learning',
-    'status' => '1',
-    'promote' => '0',
-    'sticky' => '0',
-    'type' => 'ow_page',
-    'language' => 'und',
-    'created' => '1314724558',
-    'comment' => '1',
-    'translate' => '0',
-    'machine_name' => 'born-learning',
-    'body' => array(
-      'und' => array(
-        0 => array(
-          'value' => '<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>',
+                ',
           'summary' => '',
           'format' => 'filtered_html',
           'safe_value' => '<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
@@ -258,7 +213,7 @@ function open_way_content_default_pages_content_defaults() {
       'und' => array(
         0 => array(
           'value' => '<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-              ',
+                ',
           'summary' => '',
           'format' => 'filtered_html',
           'safe_value' => '<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
@@ -440,50 +395,10 @@ function open_way_content_default_pages_content_defaults() {
       'und' => array(
         0 => array(
           'value' => '<p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
-              ',
+                ',
           'summary' => '',
           'format' => 'filtered_html',
           'safe_value' => '<p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
-  ',
-          'safe_summary' => '',
-        ),
-      ),
-    ),
-  );
-
-  $content['welcome'] = (object) array(
-    'exported_path' => 'welcome',
-    'title' => 'Welcome to Open Way!',
-    'status' => '1',
-    'promote' => '0',
-    'sticky' => '0',
-    'type' => 'ow_page',
-    'language' => 'und',
-    'created' => '1330096823',
-    'comment' => '1',
-    'translate' => '0',
-    'machine_name' => 'welcome',
-    'body' => array(
-      'und' => array(
-        0 => array(
-          'value' => '<p>Now that you have installed the platform, please take some time to look around.</p>
-              <p>Having intalled this yourself you have a great number of choices on what you do next. You may want to enhance your site but doing some additional configuration and customization. &nbsp;Here are some good places to start:&nbsp;</p>
-              <ul>
-              	<li>Customize theme settings:&nbsp;<a href="/appearance/settings/live_united_2012">yoursite.org/appearance/settings/live_united_2012</a></li>
-              	<li>Add, move or remove blocks of content:<a href="/admin/structure/block">&nbsp;yoursite.org/admin/structure/block</a></li>
-              	<li>Add some content to see how it works:&nbsp;<a href="/node/add">yoursite.org/node/add</a></li>
-              </ul>
-              <p>&nbsp;</p>
-              <p>If you have questions or suggestions make them known at&nbsp;<a href="http://openwayproject.org/">http://openwayproject.org/</a></p>',
-          'summary' => '',
-          'format' => 'filtered_html',
-          'safe_value' => '<p>Now that you have installed the platform, please take some time to look around.</p>
-  <p>Having intalled this yourself you have a great number of choices on what you do next. You may want to enhance your site but doing some additional configuration and customization.  Here are some good places to start: </p>
-  <ul><li>Customize theme settings: <a href="/appearance/settings/live_united_2012">yoursite.org/appearance/settings/live_united_2012</a></li>
-  <li>Add, move or remove blocks of content:<a href="/admin/structure/block"> yoursite.org/admin/structure/block</a></li>
-  <li>Add some content to see how it works: <a href="/node/add">yoursite.org/node/add</a></li>
-  </ul><p> </p>
-  <p>If you have questions or suggestions make them known at <a href="http://openwayproject.org/">http://openwayproject.org/</a></p>
   ',
           'safe_summary' => '',
         ),
