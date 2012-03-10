@@ -42,13 +42,7 @@ function open_way_structure_story_field_default_fields() {
     ),
     'field_instance' => array(
       'bundle' => 'ow_story',
-      'default_value' => array(
-        0 => array(
-          'summary' => '',
-          'value' => '',
-          'format' => '2',
-        ),
-      ),
+      'default_value' => NULL,
       'deleted' => '0',
       'description' => 'Stories are the most general type of content. You can use them for almost anything. They are ideal for creating and displaying timely information about the organization.',
       'display' => array(

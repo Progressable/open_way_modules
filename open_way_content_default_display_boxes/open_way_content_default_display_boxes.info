@@ -1,0 +1,8 @@
+name = "Open Way - Content - Default Display Boxes"
+description = "Example display box content"
+core = "7.x"
+package = "Features"
+features[content][] = "example_display_1"
+features[content][] = "example_display_2"
+features[content][] = "example_display_3"
+features[content][] = "example_display_4"

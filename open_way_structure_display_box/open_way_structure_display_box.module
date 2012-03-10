@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Open Way - Structure - Display Box feature.
+ */
+
+include_once('open_way_structure_display_box.features.inc');

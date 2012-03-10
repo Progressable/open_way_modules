@@ -1,0 +1,8 @@
+name = "Open Way - Content - Default Stories"
+description = "Default story content as an example"
+core = "7.x"
+package = "Features"
+features[content][] = "example_story_1"
+features[content][] = "example_story_2"
+features[content][] = "example_story_3"
+features[content][] = "example_story_4"
