@@ -69,7 +69,7 @@ function open_way_appearance_live_united_2012_strongarm() {
     'zen_breadcrumb_home' => 1,
     'zen_breadcrumb_trailing' => 1,
     'zen_breadcrumb_title' => 0,
-    'zen_rebuild_registry' => 1,
+    'zen_rebuild_registry' => 0,
     'zen_jump_link_target' => '',
     'zen_wireframes' => 0,
     'nice_menus_custom_css' => '',
