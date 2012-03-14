@@ -1,0 +1,6 @@
+name = "Open Way - Content - Default Slides"
+description = "Open Way - Content - Default Slides"
+core = "7.x"
+package = "Features"
+features[content][] = "ow_example_slide_health"
+features[content][] = "ow_example_slide_income"

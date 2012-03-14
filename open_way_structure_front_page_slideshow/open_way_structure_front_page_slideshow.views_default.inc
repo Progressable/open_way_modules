@@ -80,6 +80,31 @@ function open_way_structure_front_page_slideshow_views_default_views() {
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['row_options']['hide_empty'] = 1;
   $handler->display->display_options['row_options']['default_field_elements'] = 1;
+  /* Field: Content: Call to Action */
+  $handler->display->display_options['fields']['field_ow_slide_action']['id'] = 'field_ow_slide_action';
+  $handler->display->display_options['fields']['field_ow_slide_action']['table'] = 'field_data_field_ow_slide_action';
+  $handler->display->display_options['fields']['field_ow_slide_action']['field'] = 'field_ow_slide_action';
+  $handler->display->display_options['fields']['field_ow_slide_action']['label'] = '';
+  $handler->display->display_options['fields']['field_ow_slide_action']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_ow_slide_action']['alter']['alter_text'] = 0;
+  $handler->display->display_options['fields']['field_ow_slide_action']['alter']['make_link'] = 0;
+  $handler->display->display_options['fields']['field_ow_slide_action']['alter']['absolute'] = 0;
+  $handler->display->display_options['fields']['field_ow_slide_action']['alter']['external'] = 0;
+  $handler->display->display_options['fields']['field_ow_slide_action']['alter']['replace_spaces'] = 0;
+  $handler->display->display_options['fields']['field_ow_slide_action']['alter']['trim_whitespace'] = 0;
+  $handler->display->display_options['fields']['field_ow_slide_action']['alter']['nl2br'] = 0;
+  $handler->display->display_options['fields']['field_ow_slide_action']['alter']['word_boundary'] = 1;
+  $handler->display->display_options['fields']['field_ow_slide_action']['alter']['ellipsis'] = 1;
+  $handler->display->display_options['fields']['field_ow_slide_action']['alter']['more_link'] = 0;
+  $handler->display->display_options['fields']['field_ow_slide_action']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['field_ow_slide_action']['alter']['trim'] = 0;
+  $handler->display->display_options['fields']['field_ow_slide_action']['alter']['html'] = 0;
+  $handler->display->display_options['fields']['field_ow_slide_action']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ow_slide_action']['element_default_classes'] = 1;
+  $handler->display->display_options['fields']['field_ow_slide_action']['hide_empty'] = 0;
+  $handler->display->display_options['fields']['field_ow_slide_action']['empty_zero'] = 0;
+  $handler->display->display_options['fields']['field_ow_slide_action']['hide_alter_empty'] = 1;
+  $handler->display->display_options['fields']['field_ow_slide_action']['field_api_classes'] = 0;
   /* Field: Content: Link */
   $handler->display->display_options['fields']['field_ow_slide_link']['id'] = 'field_ow_slide_link';
   $handler->display->display_options['fields']['field_ow_slide_link']['table'] = 'field_data_field_ow_slide_link';
@@ -199,7 +224,7 @@ function open_way_structure_front_page_slideshow_views_default_views() {
 </a> 
 </div>
 <div class="take-action-slide-button">
-<a href="[field_ow_slide_link]">Take Action</a>
+<a href="[field_ow_slide_link]">[field_ow_slide_action]</a>
 </div>';
   $handler->display->display_options['fields']['field_ow_slide_content']['alter']['make_link'] = 0;
   $handler->display->display_options['fields']['field_ow_slide_content']['alter']['absolute'] = 0;

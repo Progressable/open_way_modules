@@ -10,6 +10,79 @@
 function open_way_structure_slides_field_default_fields() {
   $fields = array();
 
+  // Exported field: 'node-ow_slide-field_ow_slide_action'
+  $fields['node-ow_slide-field_ow_slide_action'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_ow_slide_action',
+      'foreign keys' => array(
+        'format' => array(
+          'columns' => array(
+            'format' => 'format',
+          ),
+          'table' => 'filter_format',
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'module' => 'text',
+      'settings' => array(
+        'max_length' => '25',
+        'profile2_private' => FALSE,
+      ),
+      'translatable' => '0',
+      'type' => 'text',
+    ),
+    'field_instance' => array(
+      'bundle' => 'ow_slide',
+      'default_value' => array(
+        0 => array(
+          'value' => 'Read More',
+        ),
+      ),
+      'deleted' => '0',
+      'description' => 'Will appear in button on slide',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'text',
+          'settings' => array(),
+          'type' => 'text_default',
+          'weight' => 4,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_ow_slide_action',
+      'label' => 'Call to Action',
+      'required' => 0,
+      'settings' => array(
+        'text_processing' => '0',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'size' => '12',
+        ),
+        'type' => 'text_textfield',
+        'weight' => '4',
+      ),
+    ),
+  );
+
   // Exported field: 'node-ow_slide-field_ow_slide_content'
   $fields['node-ow_slide-field_ow_slide_content'] = array(
     'field_config' => array(
@@ -243,11 +316,13 @@ function open_way_structure_slides_field_default_fields() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Call to Action');
   t('If you add content here this text plus the title will appear with the slide when appropriate (max 130 characters). For example on the home page this text will appear over the slide. ');
   t('Link');
   t('Slide Content');
   t('Slide Image');
   t('This is the URL of the location you want users to be linked to when they click the image. For example putting in "http://google.com" will link people to the Google home page.');
+  t('Will appear in button on slide');
 
   return $fields;
 }
