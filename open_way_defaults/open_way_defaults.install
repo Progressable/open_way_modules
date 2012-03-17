@@ -107,7 +107,7 @@ function open_way_set_wysiwyg_settings() {
   ->fields(array('weight' => 1))
   ->execute();
   
-  db_update('filter_format')
+  db_update('full_html')
   ->condition('format', 'full_html')
   ->fields(array('weight' => 0))
   ->execute();
