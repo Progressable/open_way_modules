@@ -93,12 +93,6 @@ function open_way_set_wysiwyg_settings() {
     'editor' => 'ckeditor',
     'settings' => serialize($settings),
   );
-  
-  $fields = array(
-    'format' => 'filtered_html',
-    'editor' => 'ckeditor',
-    'settings' => serialize($settings),
-  );
 
   db_insert('wysiwyg')->fields($fields)->execute();
   
@@ -107,7 +101,7 @@ function open_way_set_wysiwyg_settings() {
   ->fields(array('weight' => 1))
   ->execute();
   
-  db_update('full_html')
+  db_update('filter_format')
   ->condition('format', 'full_html')
   ->fields(array('weight' => 0))
   ->execute();
