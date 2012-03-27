@@ -25,7 +25,8 @@ function open_way_structure_blogger_bio_default_profile2_type() {
     "type" : "blogging_profile",
     "label" : "Blogging Profile",
     "weight" : "0",
-    "data" : { "registration" : 0, "use_page" : 1 }
+    "data" : { "registration" : 0, "use_page" : 1 },
+    "metatags" : []
   }');
   return $items;
 }
