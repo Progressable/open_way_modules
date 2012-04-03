@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * open_way_defaults.features.user_permission.inc
+ * open_way_people_permissions.features.user_permission.inc
  */
 
 /**
  * Implements hook_user_default_permissions().
  */
-function open_way_defaults_user_default_permissions() {
+function open_way_people_permissions_user_default_permissions() {
   $permissions = array();
 
   // Exported permission: access administration pages
@@ -16,6 +16,7 @@ function open_way_defaults_user_default_permissions() {
     'roles' => array(
       0 => 'Level0 - Webmaster',
       1 => 'Level1 - Administrator',
+      2 => 'Level2 - Manager',
     ),
     'module' => 'system',
   );
@@ -95,37 +96,20 @@ function open_way_defaults_user_default_permissions() {
       5 => 'Level2 - Manager',
       6 => 'Level3 - Publisher',
       7 => 'Level4 - Editor',
+      8 => 'Level5 - Contributer',
     ),
     'module' => 'contextual',
-  );
-
-  // Exported permission: access dashboard
-  $permissions['access dashboard'] = array(
-    'name' => 'access dashboard',
-    'roles' => array(
-      0 => 'Extra - Blocks',
-      1 => 'Extra - Menus and URL',
-      2 => 'Level1 - Administrator',
-      3 => 'Level2 - Manager',
-      4 => 'Level3 - Publisher',
-    ),
-    'module' => 'dashboard',
   );
 
   // Exported permission: access overlay
   $permissions['access overlay'] = array(
     'name' => 'access overlay',
     'roles' => array(
-      0 => 'Extra - Blocks',
-      1 => 'Extra - Content',
-      2 => 'Extra - Forms',
-      3 => 'Extra - Menus and URL',
-      4 => 'Extra - Users',
-      5 => 'Level0 - Webmaster',
-      6 => 'Level1 - Administrator',
-      7 => 'Level2 - Manager',
-      8 => 'Level3 - Publisher',
-      9 => 'Level4 - Editor',
+      0 => 'Level0 - Webmaster',
+      1 => 'Level1 - Administrator',
+      2 => 'Level2 - Manager',
+      3 => 'Level3 - Publisher',
+      4 => 'Level4 - Editor',
     ),
     'module' => 'overlay',
   );
@@ -168,30 +152,18 @@ function open_way_defaults_user_default_permissions() {
     'module' => 'toolbar',
   );
 
-  // Exported permission: access user profiles
-  $permissions['access user profiles'] = array(
-    'name' => 'access user profiles',
+  // Exported permission: access workbench
+  $permissions['access workbench'] = array(
+    'name' => 'access workbench',
     'roles' => array(
-      0 => 'anonymous user',
-      1 => 'authenticated user',
-    ),
-    'module' => 'user',
-  );
-
-  // Exported permission: add media from remote sources
-  $permissions['add media from remote sources'] = array(
-    'name' => 'add media from remote sources',
-    'roles' => array(
-      0 => 'Extra - Content',
+      0 => 'Level0 - Webmaster',
       1 => 'Level1 - Administrator',
       2 => 'Level2 - Manager',
       3 => 'Level3 - Publisher',
       4 => 'Level4 - Editor',
       5 => 'Level5 - Contributer',
-      6 => 'Type - Blogger',
-      7 => 'Type - Partner',
     ),
-    'module' => 'media_internet',
+    'module' => 'workbench',
   );
 
   // Exported permission: administer actions
@@ -230,6 +202,7 @@ function open_way_defaults_user_default_permissions() {
     'roles' => array(
       0 => 'Level0 - Webmaster',
       1 => 'Level1 - Administrator',
+      2 => 'Level2 - Manager',
     ),
     'module' => 'boxes',
   );
@@ -238,8 +211,9 @@ function open_way_defaults_user_default_permissions() {
   $permissions['administer comments'] = array(
     'name' => 'administer comments',
     'roles' => array(
-      0 => 'Level1 - Administrator',
-      1 => 'Level2 - Manager',
+      0 => 'Level0 - Webmaster',
+      1 => 'Level1 - Administrator',
+      2 => 'Level2 - Manager',
     ),
     'module' => 'comment',
   );
@@ -262,24 +236,6 @@ function open_way_defaults_user_default_permissions() {
     'module' => 'features',
   );
 
-  // Exported permission: administer files
-  $permissions['administer files'] = array(
-    'name' => 'administer files',
-    'roles' => array(
-      0 => 'Level0 - Webmaster',
-    ),
-    'module' => 'file_entity',
-  );
-
-  // Exported permission: administer filters
-  $permissions['administer filters'] = array(
-    'name' => 'administer filters',
-    'roles' => array(
-      0 => 'Level0 - Webmaster',
-    ),
-    'module' => 'filter',
-  );
-
   // Exported permission: administer image styles
   $permissions['administer image styles'] = array(
     'name' => 'administer image styles',
@@ -287,15 +243,6 @@ function open_way_defaults_user_default_permissions() {
       0 => 'Level0 - Webmaster',
     ),
     'module' => 'image',
-  );
-
-  // Exported permission: administer media
-  $permissions['administer media'] = array(
-    'name' => 'administer media',
-    'roles' => array(
-      0 => 'Level1 - Administrator',
-    ),
-    'module' => 'media',
   );
 
   // Exported permission: administer menu
@@ -307,6 +254,15 @@ function open_way_defaults_user_default_permissions() {
       2 => 'Level2 - Manager',
     ),
     'module' => 'menu',
+  );
+
+  // Exported permission: administer meta tags
+  $permissions['administer meta tags'] = array(
+    'name' => 'administer meta tags',
+    'roles' => array(
+      0 => 'Level0 - Webmaster',
+    ),
+    'module' => 'metatag',
   );
 
   // Exported permission: administer modules
@@ -339,46 +295,6 @@ function open_way_defaults_user_default_permissions() {
     'module' => 'pathauto',
   );
 
-  // Exported permission: administer permissions
-  $permissions['administer permissions'] = array(
-    'name' => 'administer permissions',
-    'roles' => array(
-      0 => 'Level0 - Webmaster',
-    ),
-    'module' => 'user',
-  );
-
-  // Exported permission: administer profile types
-  $permissions['administer profile types'] = array(
-    'name' => 'administer profile types',
-    'roles' => array(
-      0 => 'Level0 - Webmaster',
-    ),
-    'module' => 'profile2',
-  );
-
-  // Exported permission: administer profiles
-  $permissions['administer profiles'] = array(
-    'name' => 'administer profiles',
-    'roles' => array(
-      0 => 'Extra - Users',
-      1 => 'Level0 - Webmaster',
-      2 => 'Level1 - Administrator',
-    ),
-    'module' => 'profile2',
-  );
-
-  // Exported permission: administer redirects
-  $permissions['administer redirects'] = array(
-    'name' => 'administer redirects',
-    'roles' => array(
-      0 => 'Extra - Menus and URL',
-      1 => 'Level1 - Administrator',
-      2 => 'Level2 - Manager',
-    ),
-    'module' => 'redirect',
-  );
-
   // Exported permission: administer search
   $permissions['administer search'] = array(
     'name' => 'administer search',
@@ -388,22 +304,12 @@ function open_way_defaults_user_default_permissions() {
     'module' => 'search',
   );
 
-  // Exported permission: administer shortcuts
-  $permissions['administer shortcuts'] = array(
-    'name' => 'administer shortcuts',
-    'roles' => array(
-      0 => 'Level0 - Webmaster',
-      1 => 'Level1 - Administrator',
-      2 => 'Level2 - Manager',
-    ),
-    'module' => 'shortcut',
-  );
-
   // Exported permission: administer site configuration
   $permissions['administer site configuration'] = array(
     'name' => 'administer site configuration',
     'roles' => array(
       0 => 'Level0 - Webmaster',
+      1 => 'Level1 - Administrator',
     ),
     'module' => 'system',
   );
@@ -448,17 +354,6 @@ function open_way_defaults_user_default_permissions() {
     'module' => 'path',
   );
 
-  // Exported permission: administer users
-  $permissions['administer users'] = array(
-    'name' => 'administer users',
-    'roles' => array(
-      0 => 'Extra - Users',
-      1 => 'Level1 - Administrator',
-      2 => 'Level2 - Manager',
-    ),
-    'module' => 'user',
-  );
-
   // Exported permission: administer views
   $permissions['administer views'] = array(
     'name' => 'administer views',
@@ -466,6 +361,15 @@ function open_way_defaults_user_default_permissions() {
       0 => 'Level0 - Webmaster',
     ),
     'module' => 'views',
+  );
+
+  // Exported permission: administer workbench
+  $permissions['administer workbench'] = array(
+    'name' => 'administer workbench',
+    'roles' => array(
+      0 => 'Level0 - Webmaster',
+    ),
+    'module' => 'workbench',
   );
 
   // Exported permission: block IP addresses
@@ -491,30 +395,6 @@ function open_way_defaults_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: cancel account
-  $permissions['cancel account'] = array(
-    'name' => 'cancel account',
-    'roles' => array(
-      0 => 'authenticated user',
-    ),
-    'module' => 'user',
-  );
-
-  // Exported permission: change own username
-  $permissions['change own username'] = array(
-    'name' => 'change own username',
-    'roles' => array(
-      0 => 'Level1 - Administrator',
-      1 => 'Level3 - Publisher',
-      2 => 'Level4 - Editor',
-      3 => 'Level5 - Contributer',
-      4 => 'Type - Blogger',
-      5 => 'Type - Partner',
-      6 => 'authenticated user',
-    ),
-    'module' => 'user',
-  );
-
   // Exported permission: create url aliases
   $permissions['create url aliases'] = array(
     'name' => 'create url aliases',
@@ -526,17 +406,6 @@ function open_way_defaults_user_default_permissions() {
       4 => 'Level3 - Publisher',
     ),
     'module' => 'path',
-  );
-
-  // Exported permission: customize shortcut links
-  $permissions['customize shortcut links'] = array(
-    'name' => 'customize shortcut links',
-    'roles' => array(
-      0 => 'Level0 - Webmaster',
-      1 => 'Level1 - Administrator',
-      2 => 'Level2 - Manager',
-    ),
-    'module' => 'shortcut',
   );
 
   // Exported permission: delete backup files
@@ -579,42 +448,26 @@ function open_way_defaults_user_default_permissions() {
       1 => 'Level0 - Webmaster',
       2 => 'Level1 - Administrator',
       3 => 'Level2 - Manager',
-      4 => 'Level3 - Publisher',
-      5 => 'Level4 - Editor',
     ),
     'module' => 'boxes',
   );
 
-  // Exported permission: edit file
-  $permissions['edit file'] = array(
-    'name' => 'edit file',
+  // Exported permission: edit meta tags
+  $permissions['edit meta tags'] = array(
+    'name' => 'edit meta tags',
     'roles' => array(
       0 => 'Extra - Content',
       1 => 'Level0 - Webmaster',
       2 => 'Level1 - Administrator',
       3 => 'Level2 - Manager',
       4 => 'Level3 - Publisher',
-      5 => 'Level4 - Editor',
     ),
-    'module' => 'file_entity',
+    'module' => 'metatag',
   );
 
-  // Exported permission: edit media
-  $permissions['edit media'] = array(
-    'name' => 'edit media',
-    'roles' => array(
-      0 => 'Extra - Content',
-      1 => 'Level1 - Administrator',
-      2 => 'Level2 - Manager',
-      3 => 'Level3 - Publisher',
-      4 => 'Level4 - Editor',
-    ),
-    'module' => 'media',
-  );
-
-  // Exported permission: edit node machine name
-  $permissions['edit node machine name'] = array(
-    'name' => 'edit node machine name',
+  // Exported permission: edit own comments
+  $permissions['edit own comments'] = array(
+    'name' => 'edit own comments',
     'roles' => array(),
   );
 
@@ -631,28 +484,12 @@ function open_way_defaults_user_default_permissions() {
     'module' => 'taxonomy',
   );
 
-  // Exported permission: import media
-  $permissions['import media'] = array(
-    'name' => 'import media',
-    'roles' => array(
-      0 => 'Extra - Content',
-      1 => 'Level0 - Webmaster',
-      2 => 'Level1 - Administrator',
-      3 => 'Level2 - Manager',
-      4 => 'Level3 - Publisher',
-      5 => 'Level4 - Editor',
-      6 => 'Level5 - Contributer',
-      7 => 'Type - Blogger',
-      8 => 'Type - Partner',
-    ),
-    'module' => 'media',
-  );
-
   // Exported permission: manage features
   $permissions['manage features'] = array(
     'name' => 'manage features',
     'roles' => array(
-      0 => 'Level1 - Administrator',
+      0 => 'Level0 - Webmaster',
+      1 => 'Level1 - Administrator',
     ),
     'module' => 'features',
   );
@@ -704,20 +541,6 @@ function open_way_defaults_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: save draft
-  $permissions['save draft'] = array(
-    'name' => 'save draft',
-    'roles' => array(
-      0 => 'Level0 - Webmaster',
-      1 => 'Level1 - Administrator',
-      2 => 'Level2 - Manager',
-      3 => 'Level3 - Publisher',
-      4 => 'Level4 - Editor',
-      5 => 'Level5 - Contributer',
-    ),
-    'module' => 'save_draft',
-  );
-
   // Exported permission: search content
   $permissions['search content'] = array(
     'name' => 'search content',
@@ -728,60 +551,6 @@ function open_way_defaults_user_default_permissions() {
     'module' => 'search',
   );
 
-  // Exported permission: select account cancellation method
-  $permissions['select account cancellation method'] = array(
-    'name' => 'select account cancellation method',
-    'roles' => array(),
-  );
-
-  // Exported permission: show format selection for comment
-  $permissions['show format selection for comment'] = array(
-    'name' => 'show format selection for comment',
-    'roles' => array(),
-  );
-
-  // Exported permission: show format selection for file
-  $permissions['show format selection for file'] = array(
-    'name' => 'show format selection for file',
-    'roles' => array(),
-  );
-
-  // Exported permission: show format selection for node
-  $permissions['show format selection for node'] = array(
-    'name' => 'show format selection for node',
-    'roles' => array(),
-  );
-
-  // Exported permission: show format selection for profile2
-  $permissions['show format selection for profile2'] = array(
-    'name' => 'show format selection for profile2',
-    'roles' => array(),
-  );
-
-  // Exported permission: show format selection for taxonomy_term
-  $permissions['show format selection for taxonomy_term'] = array(
-    'name' => 'show format selection for taxonomy_term',
-    'roles' => array(),
-  );
-
-  // Exported permission: show format selection for user
-  $permissions['show format selection for user'] = array(
-    'name' => 'show format selection for user',
-    'roles' => array(),
-  );
-
-  // Exported permission: show format tips
-  $permissions['show format tips'] = array(
-    'name' => 'show format tips',
-    'roles' => array(),
-  );
-
-  // Exported permission: show more format tips link
-  $permissions['show more format tips link'] = array(
-    'name' => 'show more format tips link',
-    'roles' => array(),
-  );
-
   // Exported permission: skip comment approval
   $permissions['skip comment approval'] = array(
     'name' => 'skip comment approval',
@@ -790,17 +559,6 @@ function open_way_defaults_user_default_permissions() {
       1 => 'authenticated user',
     ),
     'module' => 'comment',
-  );
-
-  // Exported permission: switch shortcut sets
-  $permissions['switch shortcut sets'] = array(
-    'name' => 'switch shortcut sets',
-    'roles' => array(
-      0 => 'Level0 - Webmaster',
-      1 => 'Level1 - Administrator',
-      2 => 'Level2 - Manager',
-    ),
-    'module' => 'shortcut',
   );
 
   // Exported permission: use advanced search
@@ -817,58 +575,6 @@ function open_way_defaults_user_default_permissions() {
       7 => 'Type - Partner',
     ),
     'module' => 'search',
-  );
-
-  // Exported permission: use text format filtered_html
-  $permissions['use text format filtered_html'] = array(
-    'name' => 'use text format filtered_html',
-    'roles' => array(
-      0 => 'Extra - Content',
-      1 => 'Level0 - Webmaster',
-      2 => 'Level1 - Administrator',
-      3 => 'Level3 - Publisher',
-      4 => 'Level4 - Editor',
-      5 => 'Level5 - Contributer',
-      6 => 'Type - Blogger',
-      7 => 'Type - Partner',
-    ),
-    'module' => 'filter',
-  );
-
-  // Exported permission: use text format full_html
-  $permissions['use text format full_html'] = array(
-    'name' => 'use text format full_html',
-    'roles' => array(
-      0 => 'Extra - Content',
-      1 => 'Level0 - Webmaster',
-      2 => 'Level1 - Administrator',
-      3 => 'Level3 - Publisher',
-      4 => 'Level4 - Editor',
-    ),
-    'module' => 'filter',
-  );
-
-  // Exported permission: use text format html_code
-  $permissions['use text format html_code'] = array(
-    'name' => 'use text format html_code',
-    'roles' => array(
-      0 => 'Extra - Content',
-      1 => 'Level0 - Webmaster',
-      2 => 'Level1 - Administrator',
-      3 => 'Level3 - Publisher',
-      4 => 'Level4 - Editor',
-    ),
-    'module' => 'filter',
-  );
-
-  // Exported permission: view file
-  $permissions['view file'] = array(
-    'name' => 'view file',
-    'roles' => array(
-      0 => 'anonymous user',
-      1 => 'authenticated user',
-    ),
-    'module' => 'file_entity',
   );
 
   // Exported permission: view own unpublished content
@@ -910,10 +616,12 @@ function open_way_defaults_user_default_permissions() {
       2 => 'Extra - Forms',
       3 => 'Extra - Menus and URL',
       4 => 'Extra - Users',
-      5 => 'Level1 - Administrator',
-      6 => 'Level3 - Publisher',
-      7 => 'Level4 - Editor',
-      8 => 'Level5 - Contributer',
+      5 => 'Level0 - Webmaster',
+      6 => 'Level1 - Administrator',
+      7 => 'Level2 - Manager',
+      8 => 'Level3 - Publisher',
+      9 => 'Level4 - Editor',
+      10 => 'Level5 - Contributer',
     ),
     'module' => 'system',
   );
