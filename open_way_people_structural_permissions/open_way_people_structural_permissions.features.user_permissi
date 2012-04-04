@@ -1,0 +1,129 @@
+<?php
+/**
+ * @file
+ * open_way_people_structural_permissions.features.user_permission.inc
+ */
+
+/**
+ * Implements hook_user_default_permissions().
+ */
+function open_way_people_structural_permissions_user_default_permissions() {
+  $permissions = array();
+
+  // Exported permission: access all views
+  $permissions['access all views'] = array(
+    'name' => 'access all views',
+    'roles' => array(
+      0 => 'Level0 - Webmaster',
+    ),
+    'module' => 'views',
+  );
+
+  // Exported permission: administer blocks
+  $permissions['administer blocks'] = array(
+    'name' => 'administer blocks',
+    'roles' => array(
+      0 => 'Extra - Blocks',
+      1 => 'Level0 - Webmaster',
+      2 => 'Level1 - Administrator',
+      3 => 'Level2 - Manager',
+    ),
+    'module' => 'block',
+  );
+
+  // Exported permission: administer boxes
+  $permissions['administer boxes'] = array(
+    'name' => 'administer boxes',
+    'roles' => array(
+      0 => 'Level0 - Webmaster',
+      1 => 'Level1 - Administrator',
+      2 => 'Level2 - Manager',
+    ),
+    'module' => 'boxes',
+  );
+
+  // Exported permission: administer menu
+  $permissions['administer menu'] = array(
+    'name' => 'administer menu',
+    'roles' => array(
+      0 => 'Extra - Menus and URL',
+      1 => 'Level1 - Administrator',
+      2 => 'Level2 - Manager',
+    ),
+    'module' => 'menu',
+  );
+
+  // Exported permission: administer pathauto
+  $permissions['administer pathauto'] = array(
+    'name' => 'administer pathauto',
+    'roles' => array(
+      0 => 'Level0 - Webmaster',
+    ),
+    'module' => 'pathauto',
+  );
+
+  // Exported permission: administer redirects
+  $permissions['administer redirects'] = array(
+    'name' => 'administer redirects',
+    'roles' => array(
+      0 => 'Level0 - Webmaster',
+      1 => 'Level1 - Administrator',
+      2 => 'Level2 - Manager',
+    ),
+    'module' => 'redirect',
+  );
+
+  // Exported permission: administer url aliases
+  $permissions['administer url aliases'] = array(
+    'name' => 'administer url aliases',
+    'roles' => array(
+      0 => 'Extra - Menus and URL',
+      1 => 'Level0 - Webmaster',
+      2 => 'Level1 - Administrator',
+      3 => 'Level2 - Manager',
+    ),
+    'module' => 'path',
+  );
+
+  // Exported permission: administer views
+  $permissions['administer views'] = array(
+    'name' => 'administer views',
+    'roles' => array(
+      0 => 'Level0 - Webmaster',
+    ),
+    'module' => 'views',
+  );
+
+  // Exported permission: create url aliases
+  $permissions['create url aliases'] = array(
+    'name' => 'create url aliases',
+    'roles' => array(
+      0 => 'Extra - Menus and URL',
+      1 => 'Level0 - Webmaster',
+      2 => 'Level1 - Administrator',
+      3 => 'Level2 - Manager',
+      4 => 'Level3 - Publisher',
+    ),
+    'module' => 'path',
+  );
+
+  // Exported permission: edit boxes
+  $permissions['edit boxes'] = array(
+    'name' => 'edit boxes',
+    'roles' => array(
+      0 => 'Extra - Blocks',
+      1 => 'Level0 - Webmaster',
+      2 => 'Level1 - Administrator',
+      3 => 'Level2 - Manager',
+    ),
+    'module' => 'boxes',
+  );
+
+  // Exported permission: notify of path changes
+  $permissions['notify of path changes'] = array(
+    'name' => 'notify of path changes',
+    'roles' => array(),
+  );
+
+  return $permissions;
+}

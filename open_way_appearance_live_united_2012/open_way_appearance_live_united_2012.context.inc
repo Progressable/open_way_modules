@@ -94,12 +94,6 @@ function open_way_appearance_live_united_2012_context_default_contexts() {
           'region' => 'navigation',
           'weight' => '-9',
         ),
-        'system-main-menu' => array(
-          'module' => 'system',
-          'delta' => 'main-menu',
-          'region' => 'bottom',
-          'weight' => '10',
-        ),
       ),
     ),
   );

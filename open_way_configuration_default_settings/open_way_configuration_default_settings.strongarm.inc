@@ -13,6 +13,13 @@ function open_way_configuration_default_settings_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'boxes_edit_location';
+  $strongarm->value = '2';
+  $export['boxes_edit_location'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'configurable_timezones';
   $strongarm->value = 0;
   $export['configurable_timezones'] = $strongarm;
@@ -51,6 +58,13 @@ function open_way_configuration_default_settings_strongarm() {
   $strongarm->name = 'error_level';
   $strongarm->value = '0';
   $export['error_level'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'menu_secondary_links_source';
+  $strongarm->value = 'menu-user-tools';
+  $export['menu_secondary_links_source'] = $strongarm;
 
   return $export;
 }
