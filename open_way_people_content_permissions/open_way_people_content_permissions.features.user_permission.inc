@@ -20,6 +20,29 @@ function open_way_people_content_permissions_user_default_permissions() {
     'module' => 'comment',
   );
 
+  // Exported permission: access content
+  $permissions['access content'] = array(
+    'name' => 'access content',
+    'roles' => array(
+      0 => 'anonymous user',
+      1 => 'authenticated user',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: access content overview
+  $permissions['access content overview'] = array(
+    'name' => 'access content overview',
+    'roles' => array(
+      0 => 'Level0 - Webmaster',
+      1 => 'Level1 - Administrator',
+      2 => 'Level2 - Manager',
+      3 => 'Level3 - Publisher',
+      4 => 'Level4 - Editor',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: administer comments
   $permissions['administer comments'] = array(
     'name' => 'administer comments',
@@ -30,6 +53,15 @@ function open_way_people_content_permissions_user_default_permissions() {
       3 => 'Level3 - Publisher',
     ),
     'module' => 'comment',
+  );
+
+  // Exported permission: administer content types
+  $permissions['administer content types'] = array(
+    'name' => 'administer content types',
+    'roles' => array(
+      0 => 'Level0 - Webmaster',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: administer image styles
@@ -50,6 +82,18 @@ function open_way_people_content_permissions_user_default_permissions() {
     'module' => 'metatag',
   );
 
+  // Exported permission: administer nodes
+  $permissions['administer nodes'] = array(
+    'name' => 'administer nodes',
+    'roles' => array(
+      0 => 'Level0 - Webmaster',
+      1 => 'Level1 - Administrator',
+      2 => 'Level2 - Manager',
+      3 => 'Level3 - Publisher',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: administer search
   $permissions['administer search'] = array(
     'name' => 'administer search',
@@ -66,6 +110,23 @@ function open_way_people_content_permissions_user_default_permissions() {
       0 => 'Level0 - Webmaster',
     ),
     'module' => 'taxonomy',
+  );
+
+  // Exported permission: bypass node access
+  $permissions['bypass node access'] = array(
+    'name' => 'bypass node access',
+    'roles' => array(),
+  );
+
+  // Exported permission: delete revisions
+  $permissions['delete revisions'] = array(
+    'name' => 'delete revisions',
+    'roles' => array(
+      0 => 'Level0 - Webmaster',
+      1 => 'Level1 - Administrator',
+      2 => 'Level2 - Manager',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: delete terms in 1
@@ -96,7 +157,10 @@ function open_way_people_content_permissions_user_default_permissions() {
   // Exported permission: edit node machine name
   $permissions['edit node machine name'] = array(
     'name' => 'edit node machine name',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'Level0 - Webmaster',
+    ),
+    'module' => 'defaultcontent',
   );
 
   // Exported permission: edit own comments
@@ -126,6 +190,18 @@ function open_way_people_content_permissions_user_default_permissions() {
       1 => 'authenticated user',
     ),
     'module' => 'comment',
+  );
+
+  // Exported permission: revert revisions
+  $permissions['revert revisions'] = array(
+    'name' => 'revert revisions',
+    'roles' => array(
+      0 => 'Level0 - Webmaster',
+      1 => 'Level1 - Administrator',
+      2 => 'Level2 - Manager',
+      3 => 'Level3 - Publisher',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: search content
@@ -162,6 +238,28 @@ function open_way_people_content_permissions_user_default_permissions() {
       7 => 'Type - Partner',
     ),
     'module' => 'search',
+  );
+
+  // Exported permission: view own unpublished content
+  $permissions['view own unpublished content'] = array(
+    'name' => 'view own unpublished content',
+    'roles' => array(
+      0 => 'authenticated user',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: view revisions
+  $permissions['view revisions'] = array(
+    'name' => 'view revisions',
+    'roles' => array(
+      0 => 'Level0 - Webmaster',
+      1 => 'Level1 - Administrator',
+      2 => 'Level2 - Manager',
+      3 => 'Level3 - Publisher',
+      4 => 'Level4 - Editor',
+    ),
+    'module' => 'node',
   );
 
   return $permissions;

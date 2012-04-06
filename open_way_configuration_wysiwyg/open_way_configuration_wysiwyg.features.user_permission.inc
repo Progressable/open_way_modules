@@ -54,6 +54,18 @@ function open_way_configuration_wysiwyg_user_default_permissions() {
     'module' => 'media',
   );
 
+  // Exported permission: show format selection for node
+  $permissions['show format selection for node'] = array(
+    'name' => 'show format selection for node',
+    'roles' => array(
+      0 => 'Level0 - Webmaster',
+      1 => 'Level1 - Administrator',
+      2 => 'Level2 - Manager',
+      3 => 'Level3 - Publisher',
+    ),
+    'module' => 'better_formats',
+  );
+
   // Exported permission: view file
   $permissions['view file'] = array(
     'name' => 'view file',
