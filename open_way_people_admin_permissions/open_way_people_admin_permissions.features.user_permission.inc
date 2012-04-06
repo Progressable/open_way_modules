@@ -15,13 +15,9 @@ function open_way_people_admin_permissions_user_default_permissions() {
     'name' => 'access administration pages',
     'roles' => array(
       0 => 'Extra - Menus and URL',
-      1 => 'Extra - Users',
-      2 => 'Level0 - Webmaster',
-      3 => 'Level1 - Administrator',
-      4 => 'Level2 - Manager',
-      5 => 'Level3 - Publisher',
-      6 => 'Level4 - Editor',
-      7 => 'Level5 - Contributer',
+      1 => 'Level0 - Webmaster',
+      2 => 'Level1 - Administrator',
+      3 => 'Level2 - Manager',
     ),
     'module' => 'system',
   );

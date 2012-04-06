@@ -62,6 +62,7 @@ function open_way_configuration_wysiwyg_user_default_permissions() {
       1 => 'Level1 - Administrator',
       2 => 'Level2 - Manager',
       3 => 'Level3 - Publisher',
+      4 => 'Level4 - Editor',
     ),
     'module' => 'better_formats',
   );

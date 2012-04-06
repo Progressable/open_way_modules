@@ -73,7 +73,7 @@ function open_way_structure_display_box_views_default_views() {
   $handler->display->display_options['fields']['field_display_image']['alter']['alter_text'] = 0;
   $handler->display->display_options['fields']['field_display_image']['alter']['make_link'] = 1;
   $handler->display->display_options['fields']['field_display_image']['alter']['path'] = '[field_display_link_1]';
-  $handler->display->display_options['fields']['field_display_image']['alter']['absolute'] = 0;
+  $handler->display->display_options['fields']['field_display_image']['alter']['absolute'] = 1;
   $handler->display->display_options['fields']['field_display_image']['alter']['external'] = 0;
   $handler->display->display_options['fields']['field_display_image']['alter']['replace_spaces'] = 0;
   $handler->display->display_options['fields']['field_display_image']['alter']['trim_whitespace'] = 0;
@@ -103,7 +103,7 @@ function open_way_structure_display_box_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['alter_text'] = 0;
   $handler->display->display_options['fields']['title']['alter']['make_link'] = 1;
   $handler->display->display_options['fields']['title']['alter']['path'] = '[field_display_link_1]';
-  $handler->display->display_options['fields']['title']['alter']['absolute'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['absolute'] = 1;
   $handler->display->display_options['fields']['title']['alter']['external'] = 0;
   $handler->display->display_options['fields']['title']['alter']['replace_spaces'] = 0;
   $handler->display->display_options['fields']['title']['alter']['trim_whitespace'] = 0;

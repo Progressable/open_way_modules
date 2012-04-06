@@ -22,10 +22,7 @@ function open_way_people_user_permissions_user_default_permissions() {
   // Exported permission: administer permissions
   $permissions['administer permissions'] = array(
     'name' => 'administer permissions',
-    'roles' => array(
-      0 => 'Level0 - Webmaster',
-    ),
-    'module' => 'user',
+    'roles' => array(),
   );
 
   // Exported permission: administer userprotect

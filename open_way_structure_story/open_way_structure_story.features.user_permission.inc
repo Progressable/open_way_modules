@@ -18,8 +18,7 @@ function open_way_structure_story_user_default_permissions() {
       1 => 'Level1 - Administrator',
       2 => 'Level2 - Manager',
       3 => 'Level3 - Publisher',
-      4 => 'Level4 - Editor',
-      5 => 'Level5 - Contributer',
+      4 => 'Level5 - Contributer',
     ),
     'module' => 'node',
   );

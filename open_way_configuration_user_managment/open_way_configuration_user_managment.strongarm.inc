@@ -278,7 +278,7 @@ function open_way_configuration_user_managment_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'user_admin_role';
-  $strongarm->value = '8';
+  $strongarm->value = '0';
   $export['user_admin_role'] = $strongarm;
 
   $strongarm = new stdClass;
