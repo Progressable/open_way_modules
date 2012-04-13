@@ -34,11 +34,11 @@ function open_way_people_content_permissions_user_default_permissions() {
   $permissions['access content overview'] = array(
     'name' => 'access content overview',
     'roles' => array(
-      0 => 'Level0 - Webmaster',
-      1 => 'Level1 - Administrator',
-      2 => 'Level2 - Manager',
-      3 => 'Level3 - Publisher',
-      4 => 'Level4 - Editor',
+      0 => 'Webmaster',
+      1 => 'Administrator',
+      2 => 'Manager',
+      3 => 'Publisher',
+      4 => 'Editor',
     ),
     'module' => 'node',
   );
@@ -47,10 +47,10 @@ function open_way_people_content_permissions_user_default_permissions() {
   $permissions['administer comments'] = array(
     'name' => 'administer comments',
     'roles' => array(
-      0 => 'Level0 - Webmaster',
-      1 => 'Level1 - Administrator',
-      2 => 'Level2 - Manager',
-      3 => 'Level3 - Publisher',
+      0 => 'Webmaster',
+      1 => 'Administrator',
+      2 => 'Manager',
+      3 => 'Publisher',
     ),
     'module' => 'comment',
   );
@@ -59,7 +59,7 @@ function open_way_people_content_permissions_user_default_permissions() {
   $permissions['administer content types'] = array(
     'name' => 'administer content types',
     'roles' => array(
-      0 => 'Level0 - Webmaster',
+      0 => 'Webmaster',
     ),
     'module' => 'node',
   );
@@ -68,7 +68,7 @@ function open_way_people_content_permissions_user_default_permissions() {
   $permissions['administer image styles'] = array(
     'name' => 'administer image styles',
     'roles' => array(
-      0 => 'Level0 - Webmaster',
+      0 => 'Webmaster',
     ),
     'module' => 'image',
   );
@@ -77,7 +77,7 @@ function open_way_people_content_permissions_user_default_permissions() {
   $permissions['administer meta tags'] = array(
     'name' => 'administer meta tags',
     'roles' => array(
-      0 => 'Level0 - Webmaster',
+      0 => 'Webmaster',
     ),
     'module' => 'metatag',
   );
@@ -86,10 +86,10 @@ function open_way_people_content_permissions_user_default_permissions() {
   $permissions['administer nodes'] = array(
     'name' => 'administer nodes',
     'roles' => array(
-      0 => 'Level0 - Webmaster',
-      1 => 'Level1 - Administrator',
-      2 => 'Level2 - Manager',
-      3 => 'Level3 - Publisher',
+      0 => 'Webmaster',
+      1 => 'Administrator',
+      2 => 'Manager',
+      3 => 'Publisher',
     ),
     'module' => 'node',
   );
@@ -98,7 +98,7 @@ function open_way_people_content_permissions_user_default_permissions() {
   $permissions['administer search'] = array(
     'name' => 'administer search',
     'roles' => array(
-      0 => 'Level0 - Webmaster',
+      0 => 'Webmaster',
     ),
     'module' => 'search',
   );
@@ -107,7 +107,7 @@ function open_way_people_content_permissions_user_default_permissions() {
   $permissions['administer taxonomy'] = array(
     'name' => 'administer taxonomy',
     'roles' => array(
-      0 => 'Level0 - Webmaster',
+      0 => 'Webmaster',
     ),
     'module' => 'taxonomy',
   );
@@ -122,9 +122,9 @@ function open_way_people_content_permissions_user_default_permissions() {
   $permissions['delete revisions'] = array(
     'name' => 'delete revisions',
     'roles' => array(
-      0 => 'Level0 - Webmaster',
-      1 => 'Level1 - Administrator',
-      2 => 'Level2 - Manager',
+      0 => 'Webmaster',
+      1 => 'Administrator',
+      2 => 'Manager',
     ),
     'module' => 'node',
   );
@@ -133,10 +133,10 @@ function open_way_people_content_permissions_user_default_permissions() {
   $permissions['delete terms in 1'] = array(
     'name' => 'delete terms in 1',
     'roles' => array(
-      0 => 'Level0 - Webmaster',
-      1 => 'Level1 - Administrator',
-      2 => 'Level2 - Manager',
-      3 => 'Level3 - Publisher',
+      0 => 'Webmaster',
+      1 => 'Administrator',
+      2 => 'Manager',
+      3 => 'Publisher',
     ),
     'module' => 'taxonomy',
   );
@@ -146,10 +146,10 @@ function open_way_people_content_permissions_user_default_permissions() {
     'name' => 'edit meta tags',
     'roles' => array(
       0 => 'Extra - Content',
-      1 => 'Level0 - Webmaster',
-      2 => 'Level1 - Administrator',
-      3 => 'Level2 - Manager',
-      4 => 'Level3 - Publisher',
+      1 => 'Webmaster',
+      2 => 'Administrator',
+      3 => 'Manager',
+      4 => 'Publisher',
     ),
     'module' => 'metatag',
   );
@@ -158,7 +158,7 @@ function open_way_people_content_permissions_user_default_permissions() {
   $permissions['edit node machine name'] = array(
     'name' => 'edit node machine name',
     'roles' => array(
-      0 => 'Level0 - Webmaster',
+      0 => 'Webmaster',
     ),
     'module' => 'defaultcontent',
   );
@@ -173,11 +173,11 @@ function open_way_people_content_permissions_user_default_permissions() {
   $permissions['edit terms in 1'] = array(
     'name' => 'edit terms in 1',
     'roles' => array(
-      0 => 'Level0 - Webmaster',
-      1 => 'Level1 - Administrator',
-      2 => 'Level2 - Manager',
-      3 => 'Level3 - Publisher',
-      4 => 'Level4 - Editor',
+      0 => 'Webmaster',
+      1 => 'Administrator',
+      2 => 'Manager',
+      3 => 'Publisher',
+      4 => 'Editor',
     ),
     'module' => 'taxonomy',
   );
@@ -196,11 +196,11 @@ function open_way_people_content_permissions_user_default_permissions() {
   $permissions['revert revisions'] = array(
     'name' => 'revert revisions',
     'roles' => array(
-      0 => 'Level0 - Webmaster',
-      1 => 'Level1 - Administrator',
-      2 => 'Level2 - Manager',
-      3 => 'Level3 - Publisher',
-      4 => 'Level4 - Editor',
+      0 => 'Webmaster',
+      1 => 'Administrator',
+      2 => 'Manager',
+      3 => 'Publisher',
+      4 => 'Editor',
     ),
     'module' => 'node',
   );
@@ -229,14 +229,14 @@ function open_way_people_content_permissions_user_default_permissions() {
   $permissions['use advanced search'] = array(
     'name' => 'use advanced search',
     'roles' => array(
-      0 => 'Level0 - Webmaster',
-      1 => 'Level1 - Administrator',
-      2 => 'Level2 - Manager',
-      3 => 'Level3 - Publisher',
-      4 => 'Level4 - Editor',
-      5 => 'Level5 - Contributer',
-      6 => 'Type - Blogger',
-      7 => 'Type - Partner',
+      0 => 'Webmaster',
+      1 => 'Administrator',
+      2 => 'Manager',
+      3 => 'Publisher',
+      4 => 'Editor',
+      5 => 'Contributor',
+      6 => 'Blogger',
+      7 => 'Partner',
     ),
     'module' => 'search',
   );
@@ -254,11 +254,11 @@ function open_way_people_content_permissions_user_default_permissions() {
   $permissions['view revisions'] = array(
     'name' => 'view revisions',
     'roles' => array(
-      0 => 'Level0 - Webmaster',
-      1 => 'Level1 - Administrator',
-      2 => 'Level2 - Manager',
-      3 => 'Level3 - Publisher',
-      4 => 'Level4 - Editor',
+      0 => 'Webmaster',
+      1 => 'Administrator',
+      2 => 'Manager',
+      3 => 'Publisher',
+      4 => 'Editor',
     ),
     'module' => 'node',
   );

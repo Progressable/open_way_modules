@@ -15,9 +15,9 @@ function open_way_people_admin_permissions_user_default_permissions() {
     'name' => 'access administration pages',
     'roles' => array(
       0 => 'Extra - Menus and URL',
-      1 => 'Level0 - Webmaster',
-      2 => 'Level1 - Administrator',
-      3 => 'Level2 - Manager',
+      1 => 'Webmaster',
+      2 => 'Administrator',
+      3 => 'Manager',
     ),
     'module' => 'system',
   );
@@ -38,7 +38,7 @@ function open_way_people_admin_permissions_user_default_permissions() {
   $permissions['access site reports'] = array(
     'name' => 'access site reports',
     'roles' => array(
-      0 => 'Level0 - Webmaster',
+      0 => 'Webmaster',
     ),
     'module' => 'system',
   );
@@ -52,12 +52,12 @@ function open_way_people_admin_permissions_user_default_permissions() {
       2 => 'Extra - Forms',
       3 => 'Extra - Menus and URL',
       4 => 'Extra - Users',
-      5 => 'Level0 - Webmaster',
-      6 => 'Level1 - Administrator',
-      7 => 'Level2 - Manager',
-      8 => 'Level3 - Publisher',
-      9 => 'Level4 - Editor',
-      10 => 'Level5 - Contributer',
+      5 => 'Webmaster',
+      6 => 'Administrator',
+      7 => 'Manager',
+      8 => 'Publisher',
+      9 => 'Editor',
+      10 => 'Contributor',
     ),
     'module' => 'toolbar',
   );
@@ -67,12 +67,12 @@ function open_way_people_admin_permissions_user_default_permissions() {
     'name' => 'access workbench',
     'roles' => array(
       0 => 'Extra - Content',
-      1 => 'Level0 - Webmaster',
-      2 => 'Level1 - Administrator',
-      3 => 'Level2 - Manager',
-      4 => 'Level3 - Publisher',
-      5 => 'Level4 - Editor',
-      6 => 'Level5 - Contributer',
+      1 => 'Webmaster',
+      2 => 'Administrator',
+      3 => 'Manager',
+      4 => 'Publisher',
+      5 => 'Editor',
+      6 => 'Contributor',
     ),
     'module' => 'workbench',
   );
@@ -87,8 +87,8 @@ function open_way_people_admin_permissions_user_default_permissions() {
   $permissions['administer google analytics'] = array(
     'name' => 'administer google analytics',
     'roles' => array(
-      0 => 'Level0 - Webmaster',
-      1 => 'Level1 - Administrator',
+      0 => 'Webmaster',
+      1 => 'Administrator',
     ),
     'module' => 'googleanalytics',
   );
@@ -103,8 +103,8 @@ function open_way_people_admin_permissions_user_default_permissions() {
   $permissions['administer site configuration'] = array(
     'name' => 'administer site configuration',
     'roles' => array(
-      0 => 'Level0 - Webmaster',
-      1 => 'Level1 - Administrator',
+      0 => 'Webmaster',
+      1 => 'Administrator',
     ),
     'module' => 'system',
   );
@@ -125,7 +125,7 @@ function open_way_people_admin_permissions_user_default_permissions() {
   $permissions['administer workbench'] = array(
     'name' => 'administer workbench',
     'roles' => array(
-      0 => 'Level0 - Webmaster',
+      0 => 'Webmaster',
     ),
     'module' => 'workbench',
   );
@@ -140,12 +140,12 @@ function open_way_people_admin_permissions_user_default_permissions() {
   $permissions['view the administration theme'] = array(
     'name' => 'view the administration theme',
     'roles' => array(
-      0 => 'Level0 - Webmaster',
-      1 => 'Level1 - Administrator',
-      2 => 'Level2 - Manager',
-      3 => 'Level3 - Publisher',
-      4 => 'Level4 - Editor',
-      5 => 'Level5 - Contributer',
+      0 => 'Webmaster',
+      1 => 'Administrator',
+      2 => 'Manager',
+      3 => 'Publisher',
+      4 => 'Editor',
+      5 => 'Contributor',
     ),
     'module' => 'system',
   );

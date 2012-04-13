@@ -36,9 +36,9 @@ function open_way_people_user_permissions_user_default_permissions() {
     'name' => 'administer users',
     'roles' => array(
       0 => 'Extra - Users',
-      1 => 'Level0 - Webmaster',
-      2 => 'Level1 - Administrator',
-      3 => 'Level2 - Manager',
+      1 => 'Webmaster',
+      2 => 'Administrator',
+      3 => 'Manager',
     ),
     'module' => 'user',
   );
@@ -47,7 +47,7 @@ function open_way_people_user_permissions_user_default_permissions() {
   $permissions['assign Extra - Blocks role'] = array(
     'name' => 'assign Extra - Blocks role',
     'roles' => array(
-      0 => 'Level0 - Webmaster',
+      0 => 'Webmaster',
     ),
     'module' => 'role_delegation',
   );
@@ -56,7 +56,7 @@ function open_way_people_user_permissions_user_default_permissions() {
   $permissions['assign Extra - Content role'] = array(
     'name' => 'assign Extra - Content role',
     'roles' => array(
-      0 => 'Level0 - Webmaster',
+      0 => 'Webmaster',
     ),
     'module' => 'role_delegation',
   );
@@ -65,7 +65,7 @@ function open_way_people_user_permissions_user_default_permissions() {
   $permissions['assign Extra - Forms role'] = array(
     'name' => 'assign Extra - Forms role',
     'roles' => array(
-      0 => 'Level0 - Webmaster',
+      0 => 'Webmaster',
     ),
     'module' => 'role_delegation',
   );
@@ -74,7 +74,7 @@ function open_way_people_user_permissions_user_default_permissions() {
   $permissions['assign Extra - Menus and URL role'] = array(
     'name' => 'assign Extra - Menus and URL role',
     'roles' => array(
-      0 => 'Level0 - Webmaster',
+      0 => 'Webmaster',
     ),
     'module' => 'role_delegation',
   );
@@ -83,79 +83,79 @@ function open_way_people_user_permissions_user_default_permissions() {
   $permissions['assign Extra - Users role'] = array(
     'name' => 'assign Extra - Users role',
     'roles' => array(
-      0 => 'Level0 - Webmaster',
+      0 => 'Webmaster',
     ),
     'module' => 'role_delegation',
   );
 
-  // Exported permission: assign Level1 - Administrator role
-  $permissions['assign Level1 - Administrator role'] = array(
-    'name' => 'assign Level1 - Administrator role',
+  // Exported permission: assign Administrator role
+  $permissions['assign Administrator role'] = array(
+    'name' => 'assign Administrator role',
     'roles' => array(
-      0 => 'Level0 - Webmaster',
+      0 => 'Webmaster',
     ),
     'module' => 'role_delegation',
   );
 
-  // Exported permission: assign Level2 - Manager role
-  $permissions['assign Level2 - Manager role'] = array(
-    'name' => 'assign Level2 - Manager role',
+  // Exported permission: assign Manager role
+  $permissions['assign Manager role'] = array(
+    'name' => 'assign Manager role',
     'roles' => array(
-      0 => 'Level0 - Webmaster',
-      1 => 'Level1 - Administrator',
+      0 => 'Webmaster',
+      1 => 'Administrator',
     ),
     'module' => 'role_delegation',
   );
 
-  // Exported permission: assign Level3 - Publisher role
-  $permissions['assign Level3 - Publisher role'] = array(
-    'name' => 'assign Level3 - Publisher role',
+  // Exported permission: assign Publisher role
+  $permissions['assign Publisher role'] = array(
+    'name' => 'assign Publisher role',
     'roles' => array(
-      0 => 'Level0 - Webmaster',
-      1 => 'Level1 - Administrator',
-      2 => 'Level2 - Manager',
+      0 => 'Webmaster',
+      1 => 'Administrator',
+      2 => 'Manager',
     ),
     'module' => 'role_delegation',
   );
 
-  // Exported permission: assign Level4 - Editor role
-  $permissions['assign Level4 - Editor role'] = array(
-    'name' => 'assign Level4 - Editor role',
+  // Exported permission: assign Editor role
+  $permissions['assign Editor role'] = array(
+    'name' => 'assign Editor role',
     'roles' => array(
-      0 => 'Level0 - Webmaster',
-      1 => 'Level1 - Administrator',
-      2 => 'Level2 - Manager',
+      0 => 'Webmaster',
+      1 => 'Administrator',
+      2 => 'Manager',
     ),
     'module' => 'role_delegation',
   );
 
-  // Exported permission: assign Level5 - Contributer role
-  $permissions['assign Level5 - Contributer role'] = array(
-    'name' => 'assign Level5 - Contributer role',
+  // Exported permission: assign Contributor role
+  $permissions['assign Contributor role'] = array(
+    'name' => 'assign Contributor role',
     'roles' => array(
-      0 => 'Level0 - Webmaster',
-      1 => 'Level1 - Administrator',
-      2 => 'Level2 - Manager',
+      0 => 'Webmaster',
+      1 => 'Administrator',
+      2 => 'Manager',
     ),
     'module' => 'role_delegation',
   );
 
-  // Exported permission: assign Type - Blogger role
-  $permissions['assign Type - Blogger role'] = array(
-    'name' => 'assign Type - Blogger role',
+  // Exported permission: assign Blogger
+  $permissions['assign Blogger'] = array(
+    'name' => 'assign Blogger',
     'roles' => array(
-      0 => 'Level0 - Webmaster',
-      1 => 'Level1 - Administrator',
-      2 => 'Level2 - Manager',
+      0 => 'Webmaster',
+      1 => 'Administrator',
+      2 => 'Manager',
     ),
     'module' => 'role_delegation',
   );
 
-  // Exported permission: assign Type - Partner role
-  $permissions['assign Type - Partner role'] = array(
-    'name' => 'assign Type - Partner role',
+  // Exported permission: assign Partner role
+  $permissions['assign Partner role'] = array(
+    'name' => 'assign Partner role',
     'roles' => array(
-      0 => 'Level0 - Webmaster',
+      0 => 'Webmaster',
     ),
     'module' => 'role_delegation',
   );
