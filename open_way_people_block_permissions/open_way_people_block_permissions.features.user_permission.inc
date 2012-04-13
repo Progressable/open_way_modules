@@ -14,10 +14,10 @@ function open_way_people_block_permissions_user_default_permissions() {
   $permissions['access contextual links'] = array(
     'name' => 'access contextual links',
     'roles' => array(
-      0 => 'Level0 - Webmaster',
-      1 => 'Level1 - Administrator',
-      2 => 'Level2 - Manager',
-      3 => 'Level3 - Publisher',
+      0 => 'Webmaster',
+      1 => 'Administrator',
+      2 => 'Manager',
+      3 => 'Publisher',
     ),
     'module' => 'contextual',
   );
@@ -26,9 +26,9 @@ function open_way_people_block_permissions_user_default_permissions() {
   $permissions['administer blocks'] = array(
     'name' => 'administer blocks',
     'roles' => array(
-      0 => 'Level0 - Webmaster',
-      1 => 'Level1 - Administrator',
-      2 => 'Level2 - Manager',
+      0 => 'Webmaster',
+      1 => 'Administrator',
+      2 => 'Manager',
     ),
     'module' => 'block',
   );
@@ -37,9 +37,9 @@ function open_way_people_block_permissions_user_default_permissions() {
   $permissions['administer boxes'] = array(
     'name' => 'administer boxes',
     'roles' => array(
-      0 => 'Level0 - Webmaster',
-      1 => 'Level1 - Administrator',
-      2 => 'Level2 - Manager',
+      0 => 'Webmaster',
+      1 => 'Administrator',
+      2 => 'Manager',
     ),
     'module' => 'boxes',
   );
@@ -48,9 +48,9 @@ function open_way_people_block_permissions_user_default_permissions() {
   $permissions['edit boxes'] = array(
     'name' => 'edit boxes',
     'roles' => array(
-      0 => 'Level0 - Webmaster',
-      1 => 'Level1 - Administrator',
-      2 => 'Level2 - Manager',
+      0 => 'Webmaster',
+      1 => 'Administrator',
+      2 => 'Manager',
     ),
     'module' => 'boxes',
   );

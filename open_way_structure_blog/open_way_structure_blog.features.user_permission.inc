@@ -14,7 +14,7 @@ function open_way_structure_blog_user_default_permissions() {
   $permissions['create blog content'] = array(
     'name' => 'create blog content',
     'roles' => array(
-      0 => 'Type - Blogger',
+      0 => 'Blogger',
     ),
     'module' => 'node',
   );
@@ -58,7 +58,7 @@ function open_way_structure_blog_user_default_permissions() {
   $permissions['edit own blog content'] = array(
     'name' => 'edit own blog content',
     'roles' => array(
-      0 => 'Type - Blogger',
+      0 => 'Blogger',
     ),
     'module' => 'node',
   );

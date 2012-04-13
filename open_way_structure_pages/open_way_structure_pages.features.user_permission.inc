@@ -14,10 +14,10 @@ function open_way_structure_pages_user_default_permissions() {
   $permissions['create ow_page content'] = array(
     'name' => 'create ow_page content',
     'roles' => array(
-      0 => 'Level0 - Webmaster',
-      1 => 'Level1 - Administrator',
-      2 => 'Level2 - Manager',
-      3 => 'Level3 - Publisher',
+      0 => 'Webmaster',
+      1 => 'Administrator',
+      2 => 'Manager',
+      3 => 'Publisher',
     ),
     'module' => 'node',
   );
@@ -26,10 +26,10 @@ function open_way_structure_pages_user_default_permissions() {
   $permissions['delete any ow_page content'] = array(
     'name' => 'delete any ow_page content',
     'roles' => array(
-      0 => 'Level0 - Webmaster',
-      1 => 'Level1 - Administrator',
-      2 => 'Level2 - Manager',
-      3 => 'Level3 - Publisher',
+      0 => 'Webmaster',
+      1 => 'Administrator',
+      2 => 'Manager',
+      3 => 'Publisher',
     ),
     'module' => 'node',
   );
@@ -38,10 +38,10 @@ function open_way_structure_pages_user_default_permissions() {
   $permissions['delete own ow_page content'] = array(
     'name' => 'delete own ow_page content',
     'roles' => array(
-      0 => 'Level0 - Webmaster',
-      1 => 'Level1 - Administrator',
-      2 => 'Level2 - Manager',
-      3 => 'Level3 - Publisher',
+      0 => 'Webmaster',
+      1 => 'Administrator',
+      2 => 'Manager',
+      3 => 'Publisher',
     ),
     'module' => 'node',
   );
@@ -51,11 +51,11 @@ function open_way_structure_pages_user_default_permissions() {
     'name' => 'edit any ow_page content',
     'roles' => array(
       0 => 'Extra - Content',
-      1 => 'Level0 - Webmaster',
-      2 => 'Level1 - Administrator',
-      3 => 'Level2 - Manager',
-      4 => 'Level3 - Publisher',
-      5 => 'Level4 - Editor',
+      1 => 'Webmaster',
+      2 => 'Administrator',
+      3 => 'Manager',
+      4 => 'Publisher',
+      5 => 'Editor',
     ),
     'module' => 'node',
   );
@@ -64,11 +64,11 @@ function open_way_structure_pages_user_default_permissions() {
   $permissions['edit own ow_page content'] = array(
     'name' => 'edit own ow_page content',
     'roles' => array(
-      0 => 'Level0 - Webmaster',
-      1 => 'Level1 - Administrator',
-      2 => 'Level2 - Manager',
-      3 => 'Level3 - Publisher',
-      4 => 'Level4 - Editor',
+      0 => 'Webmaster',
+      1 => 'Administrator',
+      2 => 'Manager',
+      3 => 'Publisher',
+      4 => 'Editor',
     ),
     'module' => 'node',
   );

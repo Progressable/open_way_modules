@@ -15,11 +15,11 @@ function open_way_configuration_wysiwyg_user_default_permissions() {
   $permissions['show format selection for node'] = array(
     'name' => 'show format selection for node',
     'roles' => array(
-      0 => 'Level0 - Webmaster',
-      1 => 'Level1 - Administrator',
-      2 => 'Level2 - Manager',
-      3 => 'Level3 - Publisher',
-      4 => 'Level4 - Editor',
+      0 => 'Webmaster',
+      1 => 'Administrator',
+      2 => 'Manager',
+      3 => 'Publisher',
+      4 => 'Editor',
     ),
     'module' => 'better_formats',
   );

@@ -40,15 +40,15 @@ function roles_user_default_roles() {
     'weight' => '0',
   );
 
-  // Exported role: Level0 - Webmaster
-  $roles['Level0 - Webmaster'] = array(
-    'name' => 'Level0 - Webmaster',
+  // Exported role: Webmaster
+  $roles['Webmaster'] = array(
+    'name' => 'Webmaster',
     'weight' => '2',
   );
 
-  // Exported role: Level1 - Administrator
-  $roles['Level1 - Administrator'] = array(
-    'name' => 'Level1 - Administrator',
+  // Exported role: Administrator
+  $roles['Administrator'] = array(
+    'name' => 'Administrator',
     'weight' => '0',
   );
 

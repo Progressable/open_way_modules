@@ -15,10 +15,10 @@ function open_way_people_structure_perm_user_default_permissions() {
     'name' => 'administer menu',
     'roles' => array(
       0 => 'Extra - Menus and URL',
-      1 => 'Level0 - Webmaster',
-      2 => 'Level1 - Administrator',
-      3 => 'Level2 - Manager',
-      4 => 'Level3 - Publisher',
+      1 => 'Webmaster',
+      2 => 'Administrator',
+      3 => 'Manager',
+      4 => 'Publisher',
     ),
     'module' => 'menu',
   );
@@ -27,8 +27,8 @@ function open_way_people_structure_perm_user_default_permissions() {
   $permissions['administer pathauto'] = array(
     'name' => 'administer pathauto',
     'roles' => array(
-      0 => 'Level0 - Webmaster',
-      1 => 'Level1 - Administrator',
+      0 => 'Webmaster',
+      1 => 'Administrator',
     ),
     'module' => 'pathauto',
   );
@@ -37,9 +37,9 @@ function open_way_people_structure_perm_user_default_permissions() {
   $permissions['administer redirects'] = array(
     'name' => 'administer redirects',
     'roles' => array(
-      0 => 'Level0 - Webmaster',
-      1 => 'Level1 - Administrator',
-      2 => 'Level2 - Manager',
+      0 => 'Webmaster',
+      1 => 'Administrator',
+      2 => 'Manager',
     ),
     'module' => 'redirect',
   );
@@ -48,9 +48,9 @@ function open_way_people_structure_perm_user_default_permissions() {
   $permissions['administer url aliases'] = array(
     'name' => 'administer url aliases',
     'roles' => array(
-      0 => 'Level0 - Webmaster',
-      1 => 'Level1 - Administrator',
-      2 => 'Level2 - Manager',
+      0 => 'Webmaster',
+      1 => 'Administrator',
+      2 => 'Manager',
     ),
     'module' => 'path',
   );
@@ -59,10 +59,10 @@ function open_way_people_structure_perm_user_default_permissions() {
   $permissions['create url aliases'] = array(
     'name' => 'create url aliases',
     'roles' => array(
-      0 => 'Level0 - Webmaster',
-      1 => 'Level1 - Administrator',
-      2 => 'Level2 - Manager',
-      3 => 'Level3 - Publisher',
+      0 => 'Webmaster',
+      1 => 'Administrator',
+      2 => 'Manager',
+      3 => 'Publisher',
     ),
     'module' => 'path',
   );

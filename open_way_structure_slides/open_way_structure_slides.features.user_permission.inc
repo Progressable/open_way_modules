@@ -14,10 +14,10 @@ function open_way_structure_slides_user_default_permissions() {
   $permissions['create ow_slide content'] = array(
     'name' => 'create ow_slide content',
     'roles' => array(
-      0 => 'Level0 - Webmaster',
-      1 => 'Level1 - Administrator',
-      2 => 'Level2 - Manager',
-      3 => 'Level3 - Publisher',
+      0 => 'Webmaster',
+      1 => 'Administrator',
+      2 => 'Manager',
+      3 => 'Publisher',
     ),
     'module' => 'node',
   );
@@ -26,10 +26,10 @@ function open_way_structure_slides_user_default_permissions() {
   $permissions['delete any ow_slide content'] = array(
     'name' => 'delete any ow_slide content',
     'roles' => array(
-      0 => 'Level0 - Webmaster',
-      1 => 'Level1 - Administrator',
-      2 => 'Level2 - Manager',
-      3 => 'Level3 - Publisher',
+      0 => 'Webmaster',
+      1 => 'Administrator',
+      2 => 'Manager',
+      3 => 'Publisher',
     ),
     'module' => 'node',
   );
@@ -38,10 +38,10 @@ function open_way_structure_slides_user_default_permissions() {
   $permissions['delete own ow_slide content'] = array(
     'name' => 'delete own ow_slide content',
     'roles' => array(
-      0 => 'Level0 - Webmaster',
-      1 => 'Level1 - Administrator',
-      2 => 'Level2 - Manager',
-      3 => 'Level3 - Publisher',
+      0 => 'Webmaster',
+      1 => 'Administrator',
+      2 => 'Manager',
+      3 => 'Publisher',
     ),
     'module' => 'node',
   );
@@ -50,10 +50,10 @@ function open_way_structure_slides_user_default_permissions() {
   $permissions['edit any ow_slide content'] = array(
     'name' => 'edit any ow_slide content',
     'roles' => array(
-      0 => 'Level0 - Webmaster',
-      1 => 'Level1 - Administrator',
-      2 => 'Level2 - Manager',
-      3 => 'Level3 - Publisher',
+      0 => 'Webmaster',
+      1 => 'Administrator',
+      2 => 'Manager',
+      3 => 'Publisher',
     ),
     'module' => 'node',
   );
@@ -62,10 +62,10 @@ function open_way_structure_slides_user_default_permissions() {
   $permissions['edit own ow_slide content'] = array(
     'name' => 'edit own ow_slide content',
     'roles' => array(
-      0 => 'Level0 - Webmaster',
-      1 => 'Level1 - Administrator',
-      2 => 'Level2 - Manager',
-      3 => 'Level3 - Publisher',
+      0 => 'Webmaster',
+      1 => 'Administrator',
+      2 => 'Manager',
+      3 => 'Publisher',
     ),
     'module' => 'node',
   );
