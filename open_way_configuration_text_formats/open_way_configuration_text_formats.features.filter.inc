@@ -47,11 +47,6 @@ function open_way_configuration_text_formats_filter_default_formats() {
           'filter_html_nofollow' => 0,
         ),
       ),
-      'media_filter' => array(
-        'weight' => '-47',
-        'status' => '1',
-        'settings' => array(),
-      ),
       'filter_autop' => array(
         'weight' => '-46',
         'status' => '1',
@@ -92,11 +87,6 @@ function open_way_configuration_text_formats_filter_default_formats() {
             'remote' => 0,
           ),
         ),
-      ),
-      'media_filter' => array(
-        'weight' => '0',
-        'status' => '1',
-        'settings' => array(),
       ),
       'filter_autop' => array(
         'weight' => '1',

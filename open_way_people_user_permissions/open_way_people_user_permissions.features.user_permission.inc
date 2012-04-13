@@ -35,12 +35,54 @@ function open_way_people_user_permissions_user_default_permissions() {
   $permissions['administer users'] = array(
     'name' => 'administer users',
     'roles' => array(
-      0 => 'Extra - Users',
-      1 => 'Webmaster',
-      2 => 'Administrator',
-      3 => 'Manager',
+      0 => 'Administrator',
+      1 => 'Extra - Users',
+      2 => 'Manager',
+      3 => 'Webmaster',
     ),
     'module' => 'user',
+  );
+
+  // Exported permission: assign Administrator role
+  $permissions['assign Administrator role'] = array(
+    'name' => 'assign Administrator role',
+    'roles' => array(
+      0 => 'Webmaster',
+    ),
+    'module' => 'role_delegation',
+  );
+
+  // Exported permission: assign Blogger role
+  $permissions['assign Blogger role'] = array(
+    'name' => 'assign Blogger role',
+    'roles' => array(
+      0 => 'Administrator',
+      1 => 'Manager',
+      2 => 'Webmaster',
+    ),
+    'module' => 'role_delegation',
+  );
+
+  // Exported permission: assign Contributor role
+  $permissions['assign Contributor role'] = array(
+    'name' => 'assign Contributor role',
+    'roles' => array(
+      0 => 'Administrator',
+      1 => 'Manager',
+      2 => 'Webmaster',
+    ),
+    'module' => 'role_delegation',
+  );
+
+  // Exported permission: assign Editor role
+  $permissions['assign Editor role'] = array(
+    'name' => 'assign Editor role',
+    'roles' => array(
+      0 => 'Administrator',
+      1 => 'Manager',
+      2 => 'Webmaster',
+    ),
+    'module' => 'role_delegation',
   );
 
   // Exported permission: assign Extra - Blocks role
@@ -88,65 +130,12 @@ function open_way_people_user_permissions_user_default_permissions() {
     'module' => 'role_delegation',
   );
 
-  // Exported permission: assign Administrator role
-  $permissions['assign Administrator role'] = array(
-    'name' => 'assign Administrator role',
-    'roles' => array(
-      0 => 'Webmaster',
-    ),
-    'module' => 'role_delegation',
-  );
-
   // Exported permission: assign Manager role
   $permissions['assign Manager role'] = array(
     'name' => 'assign Manager role',
     'roles' => array(
-      0 => 'Webmaster',
-      1 => 'Administrator',
-    ),
-    'module' => 'role_delegation',
-  );
-
-  // Exported permission: assign Publisher role
-  $permissions['assign Publisher role'] = array(
-    'name' => 'assign Publisher role',
-    'roles' => array(
-      0 => 'Webmaster',
-      1 => 'Administrator',
-      2 => 'Manager',
-    ),
-    'module' => 'role_delegation',
-  );
-
-  // Exported permission: assign Editor role
-  $permissions['assign Editor role'] = array(
-    'name' => 'assign Editor role',
-    'roles' => array(
-      0 => 'Webmaster',
-      1 => 'Administrator',
-      2 => 'Manager',
-    ),
-    'module' => 'role_delegation',
-  );
-
-  // Exported permission: assign Contributor role
-  $permissions['assign Contributor role'] = array(
-    'name' => 'assign Contributor role',
-    'roles' => array(
-      0 => 'Webmaster',
-      1 => 'Administrator',
-      2 => 'Manager',
-    ),
-    'module' => 'role_delegation',
-  );
-
-  // Exported permission: assign Blogger
-  $permissions['assign Blogger'] = array(
-    'name' => 'assign Blogger',
-    'roles' => array(
-      0 => 'Webmaster',
-      1 => 'Administrator',
-      2 => 'Manager',
+      0 => 'Administrator',
+      1 => 'Webmaster',
     ),
     'module' => 'role_delegation',
   );
@@ -158,6 +147,23 @@ function open_way_people_user_permissions_user_default_permissions() {
       0 => 'Webmaster',
     ),
     'module' => 'role_delegation',
+  );
+
+  // Exported permission: assign Publisher role
+  $permissions['assign Publisher role'] = array(
+    'name' => 'assign Publisher role',
+    'roles' => array(
+      0 => 'Administrator',
+      1 => 'Manager',
+      2 => 'Webmaster',
+    ),
+    'module' => 'role_delegation',
+  );
+
+  // Exported permission: assign Webmaster role
+  $permissions['assign Webmaster role'] = array(
+    'name' => 'assign Webmaster role',
+    'roles' => array(),
   );
 
   // Exported permission: assign all roles
