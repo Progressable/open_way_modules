@@ -10,31 +10,33 @@
 function open_way_people_admin_permissions_user_default_permissions() {
   $permissions = array();
 
-  // Exported permission: access administration pages
+  // Exported permission: access administration pages.
   $permissions['access administration pages'] = array(
     'name' => 'access administration pages',
     'roles' => array(
-      0 => 'Extra - Menus and URL',
-      1 => 'Webmaster',
-      2 => 'Administrator',
-      3 => 'Manager',
+      0 => 'Administrator',
+      1 => 'Extra - Menus and URL',
+      2 => 'Manager',
+      3 => 'Webmaster',
     ),
     'module' => 'system',
   );
 
-  // Exported permission: access overlay
+  // Exported permission: access overlay.
   $permissions['access overlay'] = array(
     'name' => 'access overlay',
     'roles' => array(),
+    'module' => 'overlay',
   );
 
-  // Exported permission: access site in maintenance mode
+  // Exported permission: access site in maintenance mode.
   $permissions['access site in maintenance mode'] = array(
     'name' => 'access site in maintenance mode',
     'roles' => array(),
+    'module' => 'system',
   );
 
-  // Exported permission: access site reports
+  // Exported permission: access site reports.
   $permissions['access site reports'] = array(
     'name' => 'access site reports',
     'roles' => array(
@@ -43,85 +45,89 @@ function open_way_people_admin_permissions_user_default_permissions() {
     'module' => 'system',
   );
 
-  // Exported permission: access toolbar
+  // Exported permission: access toolbar.
   $permissions['access toolbar'] = array(
     'name' => 'access toolbar',
     'roles' => array(
-      0 => 'Extra - Blocks',
-      1 => 'Extra - Content',
-      2 => 'Extra - Forms',
-      3 => 'Extra - Menus and URL',
-      4 => 'Extra - Users',
-      5 => 'Webmaster',
-      6 => 'Administrator',
-      7 => 'Manager',
-      8 => 'Publisher',
-      9 => 'Editor',
-      10 => 'Contributor',
+      0 => 'Administrator',
+      1 => 'Contributor',
+      2 => 'Editor',
+      3 => 'Extra - Blocks',
+      4 => 'Extra - Content',
+      5 => 'Extra - Forms',
+      6 => 'Extra - Menus and URL',
+      7 => 'Extra - Users',
+      8 => 'Manager',
+      9 => 'Publisher',
+      10 => 'Webmaster',
     ),
     'module' => 'toolbar',
   );
 
-  // Exported permission: access workbench
+  // Exported permission: access workbench.
   $permissions['access workbench'] = array(
     'name' => 'access workbench',
     'roles' => array(
-      0 => 'Extra - Content',
-      1 => 'Webmaster',
-      2 => 'Administrator',
-      3 => 'Manager',
-      4 => 'Publisher',
-      5 => 'Editor',
-      6 => 'Contributor',
+      0 => 'Administrator',
+      1 => 'Contributor',
+      2 => 'Editor',
+      3 => 'Extra - Content',
+      4 => 'Manager',
+      5 => 'Publisher',
+      6 => 'Webmaster',
     ),
     'module' => 'workbench',
   );
 
-  // Exported permission: administer actions
+  // Exported permission: administer actions.
   $permissions['administer actions'] = array(
     'name' => 'administer actions',
     'roles' => array(),
+    'module' => 'system',
   );
 
-  // Exported permission: administer google analytics
+  // Exported permission: administer google analytics.
   $permissions['administer google analytics'] = array(
     'name' => 'administer google analytics',
     'roles' => array(
-      0 => 'Webmaster',
-      1 => 'Administrator',
+      0 => 'Administrator',
+      1 => 'Webmaster',
     ),
     'module' => 'googleanalytics',
   );
 
-  // Exported permission: administer modules
+  // Exported permission: administer modules.
   $permissions['administer modules'] = array(
     'name' => 'administer modules',
     'roles' => array(),
+    'module' => 'system',
   );
 
-  // Exported permission: administer site configuration
+  // Exported permission: administer site configuration.
   $permissions['administer site configuration'] = array(
     'name' => 'administer site configuration',
     'roles' => array(
-      0 => 'Webmaster',
-      1 => 'Administrator',
+      0 => 'Administrator',
+      1 => 'Webmaster',
     ),
     'module' => 'system',
   );
 
-  // Exported permission: administer software updates
+  // Exported permission: administer software updates.
   $permissions['administer software updates'] = array(
     'name' => 'administer software updates',
     'roles' => array(),
+    'module' => 'system',
   );
 
-  // Exported permission: administer themes
+  // Exported permission: administer themes.
   $permissions['administer themes'] = array(
     'name' => 'administer themes',
     'roles' => array(),
+    'module' => 'system',
   );
 
-  // Exported permission: administer workbench
+  // Exported permission: administer workbench.
   $permissions['administer workbench'] = array(
     'name' => 'administer workbench',
     'roles' => array(
@@ -130,22 +136,23 @@ function open_way_people_admin_permissions_user_default_permissions() {
     'module' => 'workbench',
   );
 
-  // Exported permission: block IP addresses
+  // Exported permission: block IP addresses.
   $permissions['block IP addresses'] = array(
     'name' => 'block IP addresses',
     'roles' => array(),
+    'module' => 'system',
   );
 
-  // Exported permission: view the administration theme
+  // Exported permission: view the administration theme.
   $permissions['view the administration theme'] = array(
     'name' => 'view the administration theme',
     'roles' => array(
-      0 => 'Webmaster',
-      1 => 'Administrator',
-      2 => 'Manager',
-      3 => 'Publisher',
-      4 => 'Editor',
-      5 => 'Contributor',
+      0 => 'Administrator',
+      1 => 'Contributor',
+      2 => 'Editor',
+      3 => 'Manager',
+      4 => 'Publisher',
+      5 => 'Webmaster',
     ),
     'module' => 'system',
   );
